@@ -1,5 +1,9 @@
 [
 
-	{"tutorialimg": "training.jpg", "tutorialname": "Advanced Hacking Training", "tutorialdesc": "The most Advanced Training [PC and Android]", "tutoriallink": "https://www.payback-security.com/advanced-hacking-training/"}
+	{"tutorialimg": "training.jpg", "tutorialname": "Advanced Hacking Training", "tutorialdesc": "The most Advanced Training [PC and Android]", "tutoriallink": "https://www.payback-security.com/advanced-hacking-training/"},
+	{"tutorialimg": "anonymity.jpeg", "tutorialname": "Anonymity on ANDRAX", "tutorialdesc": "How to become anonymous in ANDRAX", "tutoriallink": "https://learnapp.thecrackertechnology.com/2020/08/30/anonymity-on-andrax/"},
+	{"tutorialimg": "free-port-forward.png", "tutorialname": "Free Port Forwarding", "tutorialdesc": "How to enable Free Port  Forwarding in ANDRAX", "tutoriallink": "https://learnapp.thecrackertechnology.com/2020/09/02/free-port-forward-for-hacking/"},
+	{"tutorialimg": "how-to-hack-printers.jpg", "tutorialname": "How to Hack Printers", "tutorialdesc": "Learn how to Hack a printer to perform advanced attacks in the network", "tutoriallink": "https://learnapp.thecrackertechnology.com/2020/09/02/how-to-hack-printers/"}
 	
 ]
+

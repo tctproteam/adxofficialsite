@@ -1,23 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://andrax.thecrackertechnology.com/documentation/</loc>
-     <lastmod>2020-06-18</lastmod>
+     <lastmod>2020-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://andrax.thecrackertechnology.com/documentation/install/</loc>
-     <lastmod>2020-06-18</lastmod>
+     <lastmod>2020-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://andrax.thecrackertechnology.com/documentation/update/</loc>
-     <lastmod>2020-06-18</lastmod>
+     <lastmod>2020-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://andrax.thecrackertechnology.com/documentation/dragon-terminal/</loc>
+     <lastmod>2020-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://andrax.thecrackertechnology.com/documentation/introduction-to-kernel-building/</loc>
+     <lastmod>2020-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://andrax.thecrackertechnology.com/documentation/shmem-in-kernel/</loc>
+     <lastmod>2020-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://andrax.thecrackertechnology.com/documentation/hci-bluetooth-support/</loc>
+     <lastmod>2020-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://andrax.thecrackertechnology.com/documentation/MAC80211/</loc>
+     <lastmod>2020-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://andrax.thecrackertechnology.com/documentation/andrax-wireless-drivers/</loc>
+     <lastmod>2020-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://andrax.thecrackertechnology.com/documentation/compiling-kernel/</loc>
+     <lastmod>2020-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://andrax.thecrackertechnology.com/documentation/services/</loc>
-     <lastmod>2020-06-18</lastmod>
+     <lastmod>2020-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://andrax.thecrackertechnology.com/documentation/remote-control-andrax/</loc>
-     <lastmod>2020-06-18</lastmod>
+     <lastmod>2020-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://andrax.thecrackertechnology.com/documentation/bluetooth-hacking-andrax/</loc>
+     <lastmod>2020-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://andrax.thecrackertechnology.com/documentation/andrax-vs-nethunter/</loc>
+     <lastmod>2020-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://andrax.thecrackertechnology.com/documentation/andrax-vs-termux/</loc>
+     <lastmod>2020-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

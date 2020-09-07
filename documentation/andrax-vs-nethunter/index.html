@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Weidsom Nascimento">
+  <link rel="canonical" href="https://andrax.thecrackertechnology.com/documentation/andrax-vs-nethunter/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>ANDRAX vs NetHunter - ANDRAX Hackers Platform - Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "ANDRAX vs NetHunter";
+    var mkdocs_page_input_path = "andrax-vs-nethunter.md";
+    var mkdocs_page_url = "/documentation/andrax-vs-nethunter/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/c.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/cpp.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/ruby.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/http.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-81673283-2', 'andrax.thecrackertechnology.com');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ANDRAX Hackers Platform - Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Introduction</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../install/">ANDRAX Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../update/">Update/Upgrade ANDRAX</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dragon-terminal/">ANDRAX Dragon Terminal</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">ANDRAX Kernel BUILDING</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../introduction-to-kernel-building/">Introduction to Kernel Building</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../shmem-in-kernel/">Enable SHMEM in Kernel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../hci-bluetooth-support/">HCI Bluetooth support</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../MAC80211/">MAC80211</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../andrax-wireless-drivers/">Wireless Drivers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../compiling-kernel/">Compiling the Kernel</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">First steps</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../services/">ANDRAX Services</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../remote-control-andrax/">Remote Control ANDRAX</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bluetooth-hacking-andrax/">Bluetooth Hacking</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">ANDRAX Superiority</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">ANDRAX vs NetHunter</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#the-best-vs-the-dumb">The Best vs The Dumb</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#nethunter-is-restricted">NetHunter is restricted</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#kali-and-nethunter-is-old-and-outdated">Kali and NetHunter is old and outdated</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#kali-and-nethunter-dont-care-about-security-or-professionals">Kali and NetHunter don't care about security or professionals</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#technical-details-about-andrax-superiority">Technical details about ANDRAX superiority!</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#advanced-terminal">Advanced terminal</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#artificial-intelligence">Artificial Intelligence</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#more-tools">More tools</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#modern-tools">Modern tools</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#explicit-categories">Explicit categories</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mobile-telecom-ss7-sigtran-diameter-umts-lte-2g-3g-4g-5g">Mobile Telecom SS7 SIGTRAN DIAMETER UMTS LTE 2G 3G 4G 5G</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ics-and-scada">ICS and SCADA</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#iot-and-iiot-hacking">IoT and IIoT Hacking</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bgp-exploitation">BGP Exploitation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mainframe-hacking">Mainframe Hacking</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#advanced-web-site-hacking">Advanced Web Site Hacking</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#advanced-password-hacking">Advanced Password Hacking</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#wireless-hacking-by-advanced-way">Wireless Hacking by Advanced way</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exploitation-like-a-pro">Exploitation like a PRO</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#advanced-evasion-for-all-type-of-security-systems">Advanced EVASION for All type of Security Systems</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hardbased">HardBased</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#optimized">Optimized</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lightweight">Lightweight</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#learn-ethical-hacking">Learn Ethical Hacking</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../andrax-vs-termux/">ANDRAX vs Termux</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ANDRAX Hackers Platform - Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>ANDRAX Superiority &raquo;</li>
+        
+      
+    
+    <li>ANDRAX vs NetHunter</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="andrax-vs-nethunter">ANDRAX vs NetHunter</h1>
+<p><img alt="ANDRAX vs NetHunter" src="../img/andrax-vs-nethunter.png" title="ANDRAX vs NetHunter" /></p>
+<h2 id="the-best-vs-the-dumb">The Best vs The Dumb</h2>
+<p>For many years Offensive Security dominated the market with your systems, they created a monopoly and destroyed everyone who opposed them, they tried to shut me up too!</p>
+<p>But since the creation of ANDRAX I have been striving to bring a safe, efficient, high performance and free system to everyone.</p>
+<p>Today I can say that I did it! At great cost, ANDRAX has become the best platform for Penetration Testing and Ethical Hacking in the world.</p>
+<p>The most Advanced, Reliable and Complete platform, targeting any type of system in any architecture and language!</p>
+<p><strong>ANDRAX becomes the most dangerous weapon that can be armed and ready in anyone's pocket!</strong></p>
+<h2 id="nethunter-is-restricted">NetHunter is restricted</h2>
+<p>NetHunter is restricted and the developers appear don't know about the Android's power, they do things thinking in normal Linux distributions that has old models and is not useful for nowadays.</p>
+<p>The NetHunter has focus on some devices targeting a type of "easy tracking"...</p>
+<p>ANDRAX is portable and full featured with focus in Android resources, we support all devices with minimal requirements.</p>
+<p>We not restrict our resources and our goal is bring a real Penetration Testing Platform for everyone!</p>
+<h2 id="kali-and-nethunter-is-old-and-outdated">Kali and NetHunter is old and outdated</h2>
+<p>The developers of Kali and NetHunter are old guys who live in a outdated world! All tools on Kali and NetHunter are from a past who turn 90% of they unusable nowadays.</p>
+<p>ANDRAX by other way is a modern platform created and developed by <strong>just one young</strong> developer, born on 1997 and who started work as a hacker at the age of 08, everything in ANDRAX is focused to work and old systems are replaced every month by moderns tools!</p>
+<h2 id="kali-and-nethunter-dont-care-about-security-or-professionals">Kali and NetHunter don't care about security or professionals</h2>
+<p>Offensive Security don't care about security or security professionals, they only want produce and maintain a army of lammers to sell courses the only thing that they care about is money, this mean make you a dependent like a drugs sellers! This will change your mind and you never will be able to evolute like a professional because you have your mind closed like all others youtube dumbs!</p>
+<h2 id="technical-details-about-andrax-superiority">Technical details about ANDRAX superiority!</h2>
+<p>Now let's talk more deep about ANDRAX superiority over Kali, NetHunter and any others!</p>
+<h2 id="advanced-terminal">Advanced terminal</h2>
+<p>Is not a secret that the NetHunter terminal is a really, really old and ugly version of "Android Terminal Emulator" that was a good terminal (for ls and pwd command) many years ago.</p>
+<p>The NetHunter terminal is ugly and unusable for anything! This is a fact!</p>
+<p>The ANDRAX Terminal by other way is the most Advanced terminal emulator for Android, with the best implementations made by who really know what is Hacking!</p>
+<p>Don't you think? Ok, check this out: <a href="/dragon-terminal">ANDRAX Dragon Terminal</a></p>
+<h2 id="artificial-intelligence">Artificial Intelligence</h2>
+<p>ANDRAX is made with a AI engine by default, nowadays Penetration Testing and Ethical Hacking needs more than just a guy running tools, you need a more complex system, one of the best to do that is MLP-N (Multi Layer Perceptron Network).</p>
+<p>ANDRAX has LIBFANN by default in your libs sets, everything configured to start developing MLP networks using the C and C++ languages.</p>
+<p><img alt="ANDRAX MARINA" src="../img/marina.png" title="ANDRAX MARINA" /></p>
+<p><strong>M.A.R.I.N.A</strong> is a dedicated tool using MLP networks to Ethical Hacking and Penetration Testing, is under construction and growing up really fast, every time that <strong>M.A.R.I.N.A</strong> is started she learn and become more powerful!</p>
+<h2 id="more-tools">More tools</h2>
+<p>ANDRAX has more tools than any other platform, at the moment <strong>more than 3000 tools</strong> and growing up every week!</p>
+<h2 id="modern-tools">Modern tools</h2>
+<p>ANDRAX has a policy of add newer and modern tools as soon as they are launched, others platform like Kali wait the tools become useless to include then in the repo!</p>
+<h2 id="explicit-categories">Explicit categories</h2>
+<p>Kali, Parrot and others use a "category system" to create a mask in they tools lacks, as they don't have much tools, they create categories repeating many times the same tools to create the illusion of have many then... but is a lie!</p>
+<p>ANDRAX has a simple and dedicated category system to not repeat tools like dumbs platforms!</p>
+<h2 id="mobile-telecom-ss7-sigtran-diameter-umts-lte-2g-3g-4g-5g">Mobile Telecom SS7 SIGTRAN DIAMETER UMTS LTE 2G 3G 4G 5G</h2>
+<p>ANDRAX is equipped with Advanced tools for Mobile Network Hacking like 2G, 3G, 4G, 5G using GPRS, UMTS and LTE technologies, systems like Kali and Parrot is made by people who don't know what is, they don't have expertise to work with these advanced topics so this is a point that ANDRAX ever will be superior!</p>
+<h2 id="ics-and-scada">ICS and SCADA</h2>
+<p>Industrial Control System nowadays is a essential category to a Advanced Hacker... but Kali users don't know much about this world! Because they are not Advanced!</p>
+<p>ANDRAX users by other way has many resources to Advanced Ethical Hacking and Penetration Testing in ICS and SCADA platforms!</p>
+<h2 id="iot-and-iiot-hacking">IoT and IIoT Hacking</h2>
+<p><strong>In the first, is not possible run IoT and IIoT attacks natively in Kali, Parrot and others...</strong> Why? Because they are made for old systems (Personal Computers) using a old architecture (x86), ANDRAX by other way is made for smartphones with all hardware sensors and chipsets by default (NFC, BLE, WIFI...) and ARM boards like Raspberry Pi.</p>
+<p>Internet of Things dominates our world nowadays, as a Hacker you need be a expert in this area! If you know how to hack IoT devices you know how to hack the entire world, but you need the right platform and the right platform is ANDRAX!</p>
+<h2 id="bgp-exploitation">BGP Exploitation</h2>
+<p>ANDRAX is the first and unique platform with integrated tools to attack the Border Gateway Protocol!</p>
+<h2 id="mainframe-hacking">Mainframe Hacking</h2>
+<p>ANDRAX is the first and unique platform with dedicated tools to Hacking and Exploit mainframes! Wait... aren't mainframes dead? No! Mainframes is used in banks, financial institutions, airplane companies, companies like Google and others!</p>
+<p>Mainframe are extremely used in big data and our world is based in big data, but dumb users of Kali, NetHunter, Parrot, BlackArch and others don't know about advanced topics like modern mainframe hacking!</p>
+<h2 id="advanced-web-site-hacking">Advanced Web Site Hacking</h2>
+<p>Systems like Kali has a focus in monopoly tools like "burp suite" that is not Advanced or useful for nowadays but they insist on the mistake to keep the monopoly based on bribery and misinformation!</p>
+<p>ANDRAX by other way include the really Advanced resources and tools for Hacking Web Site and HTTP based applications!</p>
+<h2 id="advanced-password-hacking">Advanced Password Hacking</h2>
+<p>ANDRAX include the best tools and resources for Advanced Password Hacking including pre-computed resources, Online Cracking resources, fast induced password crackers...</p>
+<h2 id="wireless-hacking-by-advanced-way">Wireless Hacking by Advanced way</h2>
+<p>Unlike others systems ANDRAX is focused in Advanced attacks and methodologies, Our Wireless Hacking tools are pure customizables and dedicated for Advanced usage turning ANDRAX Wireless Hacking Category in the most Advanced if compared with others!</p>
+<h2 id="exploitation-like-a-pro">Exploitation like a PRO</h2>
+<p>The most Advanced resources for Advanced Exploitation, far beyond Metasploit, ANDRAX has thousands of frameworks, tools, resources, protocol stacks, libraries... for Advanced Exploitation that turn ANDRAX the All-In-One Hacking platform!</p>
+<h2 id="advanced-evasion-for-all-type-of-security-systems">Advanced EVASION for All type of Security Systems</h2>
+<p>The best exploitation tools don't mean nothing if you can't avoid AV, IDS/IPS... and ANDRAX knows that so we have Security system bypass tools for all types!</p>
+<h2 id="hardbased">HardBased</h2>
+<p>ANDRAX uses the most advanced structure inside the default Linux structure, this mean that ANDRAX can isolate process and install things with conflicting libs and resources in the same environment.</p>
+<p>With HardBased we an get a secured environment to run non trusted codes and/or deploy some types of tests that is not possible in others systems</p>
+<h2 id="optimized">Optimized</h2>
+<p>ANDRAX has a lot of optimizations enabled by default and hardcoded to bring the best experience to our users, ANDRAX is build to run in devices with low power, memory and processor power...</p>
+<p>NetHunter drain your battery in less than 2:30 hours and kill your SoC life in less than 3 months!</p>
+<h2 id="lightweight">Lightweight</h2>
+<p>ANDRAX is extremely lightweight if compared with others systems, others systems require around 40GB of free space, ANDRAX only need 15GB to run at 100%.</p>
+<p>These are only few points about the ANDRAX superiority over Kali and any other platform, do you want see the full ANDRAX power? Install it and become a professional right now! <a href="https://andrax.thecrackertechnology.com">DOWNLOAD ANDRAX</a></p>
+<h2 id="learn-ethical-hacking">Learn Ethical Hacking</h2>
+<p>If you want to become a professional, join our Advanced Ethical Hacking Training: <a href="https://learnapp.thecrackertechnology.com/advanced-hacking-training/">JOIN NOW!</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../andrax-vs-termux/" class="btn btn-neutral float-right" title="ANDRAX vs Termux">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../bluetooth-hacking-andrax/" class="btn btn-neutral" title="Bluetooth Hacking"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../bluetooth-hacking-andrax/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../andrax-vs-termux/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
