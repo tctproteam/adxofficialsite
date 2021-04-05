@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="en">
+    <head>    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81673283-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-81673283-2');
+</script>
+
+        <title>Hacking A Nuclear Power Plant with ANDRAX | ANDRAX Hackers Platform</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="How can a nuclear power plant be hacked? How to hack into a nuclear grid, Nuclear power plant Penetration Testing, Advanced Hacking, Advanced Penetration Testing"/>
+        
+        
+        
+        <link rel="stylesheet" href="/css/main.css">
+        
+        
+
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        
+    </head>
+    <body class="layout-boxed style-classic palette-green mode-light font-copper">
+        
+        <div id="site-wrap" class="site">
+
+	
+
+	<header class="site-header py-2">
+	<div class="container">
+		<nav class="navbar flex items-center" aria-label="Main Navigation">
+			<a class="sr-only" href="#content">Skip to main content</a>
+			<div class="navbar__branding mr-2">
+				
+				
+				<a class="navbar__logo m-0" href="/"><img src="/images/classic/logo.svg" alt="ANDRAX Logo" /></a>
+				
+			</div>
+			
+			<div class="navbar__container flex-md-auto">
+				<div class="navbar__scroller">
+					<div class="navbar__inner">
+						<button aria-label="Close" class="btn btn--icon btn--clear navbar__close-btn js-nav-toggle">
+							
+							
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	
+	<path d="M23.962 1.412L22.55 0 11.981 10.57 1.411 0 0 1.412l10.57 10.57L0 22.55l1.412 1.412 10.57-10.57 10.568 10.57 1.412-1.412-10.57-10.569z"/>
+	
+</svg>
+
+							<span class="sr-only">Close</span>
+						</button>
+						<div class="navbar__menu flex-md">
+							
+								
+								
+
+<ul class="menu flex-md items-md-center">
+
+	
+	
+	
+	<li class="menu__item ml-md-3">
+		
+		
+
+
+<a href="/documentation"
+	
+	
+	class="">
+	
+	
+		Documentation
+	
+</a>
+
+	</li>
+
+	
+	
+	
+	<li class="menu__item ml-md-3">
+		
+		
+
+
+<a href="/blog"
+	
+	
+	class="">
+	
+	
+		Blog
+	
+</a>
+
+	</li>
+
+	
+	
+	
+	<li class="menu__item ml-md-3">
+		
+		
+
+
+<a href="/about"
+	
+	
+	class="">
+	
+	
+		About
+	
+</a>
+
+	</li>
+
+</ul>
+
+							
+							
+								
+								
+
+<ul class="menu flex-md items-md-center">
+
+	
+	
+	
+	<li class="menu__item ml-md-3">
+		
+		
+
+
+<a href="/contact"
+	
+	
+	class="">
+	
+	
+		Contact
+	
+</a>
+
+	</li>
+
+	
+	
+	
+	<li class="menu__item ml-md-3 menu__item-btn">
+		
+		
+
+
+<a href="/download"
+	
+	
+	class="btn btn--primary">
+	
+	
+		Download
+	
+</a>
+
+	</li>
+
+</ul>
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<button aria-label="Menu" class="btn btn--icon btn--clear navbar__menu-btn js-nav-toggle ml-auto">
+				
+				
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	
+	<path d="M19 11v1.92H0V11zm5-8v1.92H0V3zm-2 16v1.92H0V19z"/>
+	
+</svg>
+
+				<span class="sr-only">Menu</span>
+			</button>
+			
+		</nav>
+	</div>
+</header>
+
+
+	<main id="content" class="site-content">
+		<article class="post py-5 py-sm-6 py-md-7">
+	
+	
+	
+	
+	<div class="post__hero container">
+		<div class="mb-4 mb-md-5 mb-md-6 grid items-center">
+			
+			
+			<div class="post__image mb-3 cell-12 cell-lg-7 mb-lg-0">
+				<img src="/images/how-to-hack-a-nuclear-power-plant.jpg" alt="How to Hack A Nuclear Power Plant" />
+			</div>
+			
+
+			<header class="post__header cell-12 cell-lg-5 order-lg-first">
+				<div class="post__meta mb-2">
+					
+					
+						
+						
+
+<span class="post__cat">
+	
+		
+		
+		
+			<a href="/blog/category/pentest">Penetration Testing</a>, 
+		
+	
+		
+		
+		
+			<a href="/blog/category/tutorials">Tutorials</a>, 
+		
+	
+		
+		
+		
+			<a href="/blog/category/general">General</a>
+		
+	
+</span>
+
+						<span class="post__meta-sep"> &middot; </span>
+					
+					<span class="post__date"><time datetime="2021-04-02 00:00">April 02, 2021</time></span>
+				</div>
+				<h1 class="post__title mt-0">Hacking A Nuclear Power Plant with ANDRAX</h1>
+				
+				
+					<p class="post__subtitle">How to hack a Nuclear Power Plant using ANDRAX Hacker's Platform</p>
+				
+				
+				
+					
+					
+
+
+<div class="post__byline">
+	
+	
+	
+	<a class="flex items-center" href="/blog/author/weidsom-nascimento">
+		
+		
+		<figure class="avatar mr-1">
+			<img class="avatar__img" src="/images/weidsom-nascimento.png" alt="Weidsom Nascimento" />
+		</figure>
+		
+		<span>Weidsom Nascimento</span>
+	</a>
+	
+</div>
+
+				
+			</header>
+		</div>
+	</div>
+
+	<div class="container container--medium">
+		<div class="post__body text-block">
+			<h1 id="attention"><span style="color:red;">ATTENTION!!!</span></h1>
+<h3 id="this-article-is-for-learning-purpose-only"><span style="color:green;">This article is for learning purpose ONLY!</span></h3>
+
+<h1 id="can-a-nuclear-plant-be-hacked">Can a Nuclear Plant be Hacked?</h1>
+
+<p>The short answer is YES! The extended one: Is harder than a normal Hack not by the complexity but by the limited acknowledgement of this topic.</p>
+
+<p>99.9% of people are in their homes without imagining what is going on outside…</p>
+
+<p>People trust that the security of their lives is guaranteed by the government and/or private organizations. Physical security is no longer the biggest concern of a government or company, but cyber security!</p>
+
+<h3 id="have-you-heard-of-the-biggest-nuclear-accident-in-the-world">Have you heard of the biggest nuclear accident in the world?</h3>
+
+<p><img src="/images/chernobyl.gif" alt="Chernobyl Reactor 4" /></p>
+
+<p>Chernobyl disaster was a nuclear accident that occurred on Saturday, 26 April 1986, at the No. 4 reactor in the Chernobyl Nuclear Power Plant, near the city of Pripyat in the north of the Ukrainian. It is considered the worst nuclear disaster in history both in terms of cost and casualties.</p>
+
+<p>In 2005, it predicted a further <strong>4,000</strong> might eventually die as a result of the radiation exposure.</p>
+
+<p>The ionizing radiation levels in the worst-hit areas of the reactor building have been estimated to be <strong>5.6 roentgens per second</strong> (R/s), equivalent to <strong>more than 20,000 roentgens per hour</strong>. A lethal dose is around 500 roentgens (~5 Gray (Gy) in modern radiation units) over five hours, so in some areas, unprotected workers received fatal doses in less than a minute.</p>
+
+<h3 id="do-you-know-about-stuxnet">Do you know about STUXNET?</h3>
+
+<p><img src="/images/stuxnet.jpg" alt="STUXNET" /></p>
+
+<p>Stuxnet is a malicious computer worm first uncovered in 2010 and thought to have been in development since at least 2005. Stuxnet targets supervisory control and data acquisition (SCADA) systems and is believed to be responsible for causing substantial damage to the nuclear program of Iran.</p>
+
+<h3 id="but-what-do-these-two-events-have-in-common">But what do these two events have in common?</h3>
+
+<p>You’ll see throughout the article…</p>
+
+<h2 id="from-virtual-to-physical-world">From Virtual to Physical World</h2>
+
+<p>STUXNET was the first computer virus (that we know) to interact with the physical world, can imagine that? A computer virus, that can manipulate physical componentes to cause real physical damage… Come on, this is cool!</p>
+
+<h1 id="how-a-nuclear-plant-works">How a Nuclear Plant works?</h1>
+
+<p><img src="/images/how-to-hack-a-nuclear-power-plant.jpg" alt="How to Hack A Nuclear Power Plant" /></p>
+
+<p>Looking at the image above we can see in a simple way how a nuclear power plant works.</p>
+
+<p>Step by Step:</p>
+
+<ol>
+  <li><strong>Reactor heats water inside the core</strong>.</li>
+  <li><strong>The water overheats and becomes steam</strong>.</li>
+  <li><strong>The primary condenser exchanges heat with the core to generate steam that will spin the turbine</strong>.</li>
+  <li><strong>The turbine rotates with the pressure of the steam generating electrical energy</strong>.</li>
+  <li><strong>The secondary condenser cools the steam from the turbine, which returns to the primary condenser, cooling the steam from the core</strong>.</li>
+  <li><strong>The secondary condenser is cooled by cold water from the cooling tower, which in turn releases the vapor from the secondary condenser</strong>.</li>
+</ol>
+
+<p>This is basic concept of a Nuclear Reactor in a Nuclear Power Plant…</p>
+
+<p>In this scenario we have two critical systems that can never fail: <strong>The Reactor cooling system</strong> and <strong>the Reactor control system</strong>.</p>
+
+<h3 id="what-happen-if-one-of-those-systems-fails">What happen if one of those systems fails?</h3>
+
+<p>The Reactor meltdown and we have another disaster like Chernobyl disaster.</p>
+
+<h5 id="all-nuclear-power-plants-in-the-world-have-already-been-hacked-by-countries-like-the-united-states-and-china">All nuclear power plants in the world have already been hacked by countries like the United States and China.</h5>
+
+<p>These countries maintain backdoors at the plants hoping for a possible war to destroy the plant’s infrastructure and cause radiation deaths, as exposed by Edward Snowden in his files.</p>
+
+<p>That is why governments and private companies in the control of nuclear power plants should be more concerned with the safety of the installations.</p>
+
+<h2 id="how-to-hack-a-nuclear-power-plant">How to Hack A Nuclear Power Plant?</h2>
+
+<p>The reactor control system is in most cases inaccessible so let’s focus on the reactor cooling system…</p>
+
+<p>The pumps are our target, especially the pump of the primary condenser, Why? Simple, the pump is inside the “Reactor zone” all in this zone is radioactive. So is obviously a high priority target to make the Reactor meltdown and explode!</p>
+
+<h3 id="wait-are-you-talking-about-hack-a-pump">Wait, are you talking about hack a PUMP?</h3>
+
+<p>Again THIS IS AN ETHICAL ARTICLE, I’m just showing how is possible… simple like that!</p>
+
+<h3 id="how-these-pumps-are-controlled">How these pumps are controlled?</h3>
+
+<p>By an Industrial Control System variant in 99% of cases is SCADA, largely used in industrial: Robots that mount cars, Traffic lights…</p>
+
+<p>SCADA systems are extremely vulnerable for thousands of attacks… but is hard to upgrade to modern portrocols or standards because most systems that use SCADA can’t be stoped for a long time like Power Plants.</p>
+
+<p>For security reasons these system are not exposed to the internet, they are restricted for the internal network!</p>
+
+<p>Still, STUXNET was able to destroy the Iranian nuclear program … How?</p>
+
+<p>STUXNET was deployed in Iran’s uranium enrichment facilities through internal monitoring systems.</p>
+
+<h3 id="internal-monitoring-systems">Internal Monitoring Systems</h3>
+
+<p>As mentioned before, SCADA systems are restricted to the internal network but it is very common to see internal monitoring systems exposing these systems to the internet, the most common ones being RDP and SDN.</p>
+
+<p>Sometimes the government or department responsible for the facility requires these systems to monitor and record internal activities.</p>
+
+<h3 id="software-defined-networks">Software Defined Networks</h3>
+
+<p>In the image below you can see the structure of an SDN (<strong>ANDRAX can hack SDN networks natively</strong>).</p>
+
+<p><img src="/images/Software-Defined-Networking.png" alt="Software Defined Network" /></p>
+
+<p>As soon as we invade and manage to position ourselves between the SDN interfaces, we will scan the internal network for targets.</p>
+
+<p>I will not explain the step by step of how to break into an SDN because it is something simple, if you do not know take a look at our training: <a href="/adht" title="Advanced Hacking Training">Advanced Hacking Training</a>.</p>
+
+<h2 id="nuclear-power-plant-simulator">Nuclear Power Plant Simulator</h2>
+
+<p>For obvious reasons I can’t blow up a real Nuclear Reactor, so I made a simulator based in my real world Penetration Testings in Nuclear Power Plants. More precisely a simulator of the Reactors Cooling System.</p>
+
+<p><img src="/images/reactorsimulator.png" alt="Reactor Simulator" /></p>
+
+<p>[ <strong>You can find the simulator your Training Dashboard, in the resources tab</strong> ]</p>
+
+<p>In the simulator we can see the process of cooling starting with the “Turbine pump” and the “Reactor water pump.”</p>
+
+<p>Three Sensors are connected to our registers this mean that we will have three readings in the simulator, one for Turbine RPM and one for each pump.</p>
+
+<h4 id="how-this-works">How this works?</h4>
+
+<p>The simulator has been developed to work in the same way that a real cooling system.</p>
+
+<p>Our target is the pump in “Reactor’s zone”, so this pump has a nominal RPM of 27,000 and a STEP of 500 RPM, but what is the “STEP” is an adjust that the sensors make, in case the speed is under than 27,000 RPM the controller will STEP “over”, in case the speed is over than 27,000 RPM the controller will STEP “down”… so simple!</p>
+
+<h2 id="scanning-the-network">Scanning the Network</h2>
+
+<p>We already inside the Nuclear Power Plant network by the SDN hack… so now we need discover more about the devices in this network.</p>
+
+<p>Running a nmap scan we can detect an interesting host with the IP: <strong>10.0.0.75</strong>, now let’s scan this device for open ports.</p>
+
+<p><img src="/images/reactor-cooling-system-scan01.png" alt="Reactor Cooling System Scan" /></p>
+
+<p><strong>YEAH!</strong> Our scan found a really interesting port. 502 is officially the port for <strong>mbap</strong> (<strong>Modbus Application Protocol</strong>).</p>
+
+<p>Let’s investigate more using nmap:</p>
+
+<p><img src="/images/reactor-cooling-system-scan02.png" alt="Reactor Cooling System Scan" /></p>
+
+<p>Here we will go! To eliminate false positives we will use modscan to get more information about.</p>
+
+<p><img src="/images/reactor-cooling-system-modscan.png" alt="Reactor Cooling System MODSCAN" /></p>
+
+<p><strong>Thats it</strong>! We have the confirmation that this device is an <strong>RTU</strong>… but, WTF is MODBUS?</p>
+
+<h2 id="modbus-introduction">MODBUS Introduction</h2>
+
+<p>Modbus is a data communications protocol for use with its <strong>Programmable Logic Controllers</strong> (PLCs). Modbus has become a de facto standard communication protocol and is now a commonly available means of connecting industrial electronic devices.</p>
+
+<p>The Modbus protocol uses character serial communication lines, Ethernet, or the Internet protocol suite as a transport layer.</p>
+
+<p>Modbus is often used to connect a plant/system supervisory computer with a <strong>Remote Terminal Unit</strong> (RTU) in <strong>Supervisory Control and Data Acquisition</strong> (SCADA) systems in the electric power industry. Many of the data types are named from industrial control of factory devices, such as Ladder logic because of its use in driving relays: A single physical output is called a coil, and a single physical input is called a discrete input or a contact.</p>
+
+<h2 id="hacking-the-pump">Hacking the PUMP</h2>
+
+<p>If I was a attacker from another country or just hired to do that my goal would be meltdown the reactor, cause an explosion and/or radiation leak… in any case this involves physical damage of the reactor.</p>
+
+<p>Has two actions that we can perform here…</p>
+
+<p>As we know that the RTU controller will STEP “over” or STEP “down” in case the speed of the fan is not nominal, we can change the speed in the sensor… so the controller will think that the speed is “lower” (for example) and will start the STEP “over” action trying to elevate the fan speed to nominal speed again…</p>
+
+<p>Let’s see some example in images:</p>
+
+<h3 id="step-down">STEP Down</h3>
+
+<p>If we change the nominal speed in the sensor to a FAKE High Speed, the controller will try STEP the speed down sending commands to the pump PLC to reduce the speed, if we continue to send FAKE High Speed to the controller it will continue sending STEP down commands to the pump PLC… if this continues for some time the pressure inside the Reactor will become critical very fast, more fast than the controllers can handle it to the core will meltdown and the reactor will explode!</p>
+
+<p><img src="/images/how-to-hack-a-nuclear-power-plant02.gif" alt="Reactor Cooling System STEP Down" /></p>
+
+<h2 id="step-down-attack">STEP Down ATTACK</h2>
+
+<p>Remember that as an attacker we can’t see the simulator screen or the Control Panel Screen in a real world.</p>
+
+<p>So we will use mbtget inside ANDRAX to read the values in registers…</p>
+
+<p><img src="/images/reactor-cooling-system-mbtget.png" alt="Reactor Cooling System mbtget" /></p>
+
+<p>As you can see, we have three registers, just looking at it we can determine that the Reactor’s pump register is the register <strong>0</strong>.</p>
+
+<p>The register <strong>1</strong> is the secondary condenser pump and the register <strong>2</strong> is the turbine RPM.</p>
+
+<p>Now let’s start our STEP Down ATTACK, we will write to the sensor register saying that the Speed is 35.000 RPM as this speed is Higher than the nominal Speed, the controller will try STEP Down until the Reactor’s pump stop completely… the result of this you will see…</p>
+
+<p><img src="/images/reactor-cooling-system-step-down-attack01.png" alt="Reactor Cooling System STEP DOWN ATTACK" /></p>
+
+<p>When we start our attack, the controller appears like this:</p>
+
+<p><img src="/images/reactor-cooling-system-step-down-attack02.png" alt="Reactor Cooling System STEP DOWN ATTACK" /></p>
+
+<p>As you can see the RPM Sensor shows 35.000 RPM but the FAN RPM is 11.500 RPM and downgrading… Why? Because the STEP down command that the controller is sending to the pump PLC.</p>
+
+<p>If the attack persists, this is the result:</p>
+
+<p><img src="/images/reactor-cooling-system-step-down-attack03.png" alt="Reactor Cooling System STEP DOWN ATTACK" /></p>
+
+<p>The Reactor Blow up… <strong>1.890</strong> people die in the explosion. The Radiation is now at <strong>5.22</strong> Roentgens per second…</p>
+
+<p>This is a result that can happen in the same way in the real world!</p>
+
+<h2 id="step-over-attack">STEP Over ATTACK</h2>
+
+<p>The opposite of STEP Down but with the same mode of operation, we will say that the speed is below the nominal, thus making the controller send STEP Over commands to the pump’s PLC.</p>
+
+<p>The pressure inside the core will increase and even if it does not reach the limit of the reactor core, the pump will explode due to the RPM limit, consequently the reactor will also explode due to the water flow being interrupted!</p>
+
+<p><img src="/images/how-to-hack-a-nuclear-power-plant03.gif" alt="Reactor Cooling System STEP Over" /></p>
+
+<p>Sending FAKE Speed commands for the sensor:</p>
+
+<p><img src="/images/reactor-cooling-system-step-over-attack01.png" alt="Reactor Cooling System STEP OVER ATTACK" /></p>
+
+<p>The controller is now STEPPING Over the speed…</p>
+
+<p><img src="/images/reactor-cooling-system-step-over-attack02.png" alt="Reactor Cooling System STEP OVER ATTACK" /></p>
+
+<p>And the Reactor blow up again…</p>
+
+<p><img src="/images/reactor-cooling-system-step-over-attack03.png" alt="Reactor Cooling System STEP OVER ATTACK" /></p>
+
+<p>Now because we reach the limit of pump’s RPM… The same disaster but using 2 different attacks in the same vector…</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>In this article we could see how fragile is our security… and that we need a lot of improvements to prevent new disasters… It is only a matter of time for an attacker with good reason carry out this type of attack in important and dangerous facilities such as nuclear power plants.</p>
+
+<h1 id="wanna-become-a-ethical-hacker">Wanna become a Ethical <strong>Hacker</strong>?</h1>
+
+<p>Would you like to <strong>become a Hacker</strong>? Make <strong>money</strong> with <strong>Hacking</strong> and have the most advanced knowledge?</p>
+
+<p>Take a look in our <a href="/adht" title="Advanced Hacking Training">Advanced Hacking Training</a> The most Advanced and Complete Penetration Testing and Ethical Hacking Training ever made.</p>
+
+<p><img src="/images/adhtlogo.png" alt="Advanced Hacking Training" /></p>
+
+		</div>
+	
+		
+		
+		<footer class="post__footer mt-4 mt-md-5">
+			
+			
+
+	
+	
+	
+		<a class="mr-1" href="/blog/tag/ethicalhacking">Ethical Hacking</a>
+	
+
+	
+	
+	
+		<a class="mr-1" href="/blog/tag/advancedhacking">Advanced Hacking</a>
+	
+
+
+		</footer>
+		
+	</div>
+
+</article>
+
+	</main>
+
+	
+
+
+
+
+
+
+
+<footer class="site-footer">
+	
+	<div class="site-footer__nav py-5 py-md-6">
+		<div class="container">
+			<div class="grid">
+				
+				
+				<a class="site-footer__logo cell-12 cell-md-5 my-4" href="/">
+					<img style="max-width: 300px;" src="/images/classic/andrax-full-logo.svg" alt="ANDRAX Logo" />
+				</a>
+				
+				
+				<div class="site-footer__menu cell-12 cell-md my-3 my-md-4">
+					
+					
+					<h2 class="h4 mb-3 mb-md-4">ANDRAX</h2>
+					
+					
+					
+<ul class="menu">
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/about"
+	
+	
+	class="">
+	
+	
+		About
+	
+</a>
+
+	</li>
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/contact"
+	
+	
+	class="">
+	
+	
+		Contact
+	
+</a>
+
+	</li>
+
+</ul>
+
+				</div>
+				
+				
+				<div class="site-footer__menu cell-12 cell-md my-3 my-md-4">
+					
+					
+					<h2 class="h4 mb-3 mb-md-4">Blog</h2>
+					
+					
+					
+<ul class="menu">
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/blog/category/news"
+	
+	
+	class="">
+	
+	
+		News
+	
+</a>
+
+	</li>
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/blog/category/general"
+	
+	
+	class="">
+	
+	
+		General
+	
+</a>
+
+	</li>
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/blog/category/tutorials"
+	
+	
+	class="">
+	
+	
+		Tutorials
+	
+</a>
+
+	</li>
+
+</ul>
+
+				</div>
+				
+				
+				<div class="site-footer__menu cell-12 cell-md my-3 my-md-4">
+					
+					
+					<h2 class="h4 mb-3 mb-md-4">Legal</h2>
+					
+					
+					
+<ul class="menu">
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/terms-conditions"
+	
+	
+	class="">
+	
+	
+		Terms & Conditions
+	
+</a>
+
+	</li>
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/privacy-policy"
+	
+	
+	class="">
+	
+	
+		Privacy Policy
+	
+</a>
+
+	</li>
+
+</ul>
+
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="site-footer__info py-3 py-sm-4">
+		<div class="container">
+			<div class="grid items-center">
+				
+				
+				<div class="site-footer__copyright cell-12 cell-sm">
+					
+					
+						<span>Copyritght &copy; ANDRAX Hackers Platform 2021. All rights reserved. <a href="https://www.thecrackertechnology.com" target="_blank" rel="noopener">The Cracker Technology - Advanced Pentest</a>.</span>
+					
+					
+				</div>
+				
+				
+				
+				<div class="site-footer__social cell-12 cell-sm-auto">
+					
+						
+						
+						<a href="https://wa.me/message/DQW2Y7YWBJ7TB1"
+							 target="_blank"
+							 rel="noopener "
+							class="btn btn--icon btn--clear">
+							
+							
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	
+	<path d="M 10.275266,23.228679 C 9.321972,23.082505 8.1436729,22.735948 7.2960321,22.35244 L 6.7071039,22.085985 4.7916357,22.591891 c -1.0535074,0.278248 -2.0391156,0.505906 -2.1902403,0.505906 -0.4741049,0 -1.0147849,-0.278261 -1.2970171,-0.667509 C 0.85566573,21.811432 0.86427507,21.640007 1.4531465,19.468122 L 1.9853863,17.505108 1.6578314,16.788207 C 1.2501356,15.895908 0.98838113,15.104309 0.78482181,14.148049 0.56614407,13.120767 0.56814589,10.838164 0.78863428,9.8011639 1.7659461,5.2046703 5.1904299,1.7833647 9.7911938,0.80695974 c 1.0556472,-0.22403663 3.3200532,-0.22231286 4.3913042,0.003346 3.482863,0.73365476 6.385548,2.92172736 7.956866,5.99796276 2.250558,4.4060185 1.377958,9.7609225 -2.160518,13.2584985 -2.568611,2.538921 -6.151866,3.706527 -9.70358,3.161917 z M 13.62321,22.130146 C 18.777411,21.295033 22.46176,16.76221 22.243433,11.524756 22.054192,6.9850386 18.959029,3.1895803 14.473889,1.9973138 13.700551,1.7917407 13.387612,1.7598182 12.067996,1.7518929 10.047237,1.7397566 8.952407,1.9911141 7.2483965,2.858405 c -4.91915,2.5037016 -6.9350909,8.534049 -4.5516434,13.615473 0.1988954,0.424037 0.3616281,0.846348 0.3616281,0.938468 0,0.09212 -0.2275388,1.008782 -0.5056416,2.037028 -0.2781029,1.028246 -0.5056417,1.946208 -0.5056417,2.039915 0,0.230218 0.2634953,0.506313 0.4832089,0.506313 0.098399,0 1.0903159,-0.235383 2.2042602,-0.523074 2.2841582,-0.589913 1.9228512,-0.594221 3.4261984,0.04086 1.6378744,0.691913 3.6184296,0.915535 5.4624446,0.616757 z M 10.964778,20.556677 C 10.042679,20.411584 9.2068888,20.170134 8.2845069,19.782374 7.5821436,19.48711 7.0815356,19.331966 6.8311551,19.331966 c -0.2100671,0 -0.8735483,0.123997 -1.4744029,0.275548 -0.6008546,0.151552 -1.1086253,0.27555 -1.1283794,0.27555 -0.019753,0 0.1046747,-0.506322 0.276508,-1.125158 C 4.8842726,17.391576 4.8667832,17.061569 4.3617379,16.056937 3.3572034,14.058729 3.102688,11.973791 3.6086983,9.8881925 4.213293,7.3962631 6.0196685,5.237753 8.432568,4.1239594 c 1.1491831,-0.5304623 2.104179,-0.721526 3.589461,-0.7181349 1.494179,0.00341 2.357256,0.1876651 3.601391,0.7688414 0.977629,0.4566821 1.488875,0.8107372 2.315457,1.6035342 1.635886,1.5690223 2.510678,3.4837157 2.646488,5.7924809 0.219412,3.729983 -2.178162,7.298182 -5.739021,8.541116 -1.165473,0.406815 -2.876897,0.602967 -3.881566,0.44488 z m 5.209078,-3.666873 c 0.674923,-0.322848 1.092728,-0.818337 1.224412,-1.452064 0.180875,-0.870459 0.192411,-0.855438 -1.188815,-1.547858 -0.680201,-0.340992 -1.310576,-0.619985 -1.400831,-0.619985 -0.09262,0 -0.410607,0.300065 -0.730015,0.688872 -0.416219,0.50665 -0.623913,0.688871 -0.785171,0.688871 -0.280844,0 -1.394159,-0.548766 -1.96982,-0.970949 C 10.737044,13.246509 9.892458,12.314498 9.5025683,11.667147 L 9.1895427,11.14742 9.3893081,10.899803 C 9.966987,10.183752 10.137365,9.9163549 10.137365,9.725779 10.137365,9.4413449 9.2300269,7.3116794 9.0190377,7.1008857 8.8159188,6.8979542 8.2418225,6.8767903 7.81162,7.0563735 7.162552,7.3273195 6.5689825,8.2971554 6.484843,9.2242009 c -0.097595,1.0753011 0.3462077,2.1985281 1.4546958,3.6817061 1.516086,2.028551 2.9767352,3.143134 5.0478052,3.851851 1.480794,0.506723 2.329699,0.541901 3.186512,0.132046 z"/>
+	
+</svg>
+
+							<span class="sr-only">WhatsApp</span>
+						</a>
+						
+					
+						
+						
+						<a href="https://t.me/advancedpentest"
+							 target="_blank"
+							 rel="noopener "
+							class="btn btn--icon btn--clear">
+							
+							
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	
+	<path d="M 10.236096,23.663539 C 7.5534478,23.229842 5.3356975,22.07927 3.4627334,20.149511 1.8727337,18.511296 0.84086727,16.567621 0.33868071,14.264892 0.20516085,13.652647 0.1876823,13.389306 0.1876823,11.989889 c 0,-1.399418 0.0174796,-1.662758 0.15099841,-2.2750034 C 0.84086727,7.4121561 1.8727337,5.4684814 3.4627334,3.8302671 5.2130398,2.026885 7.1621532,0.95969973 9.7177709,0.4054863 10.326951,0.27337965 10.591438,0.2560626 12,0.2560626 c 1.408563,0 1.673049,0.0173202 2.282229,0.1494237 2.555619,0.55421343 4.504732,1.6213987 6.255038,3.4247808 1.59,1.6382143 2.621867,3.581889 3.124052,5.8846185 0.133521,0.6122454 0.150999,0.8755854 0.150999,2.2750034 0,1.399417 -0.01748,1.662758 -0.150999,2.275003 -0.502185,2.302729 -1.534052,4.246404 -3.124052,5.884619 -1.742006,1.79483 -3.709095,2.875076 -6.22089,3.41626 -0.855335,0.184287 -3.197913,0.240418 -4.080281,0.09777 z m 5.156068,-6.179043 c 0.133587,-0.134442 0.283871,-0.81241 1.221962,-5.512575 C 17.202428,9.0243177 17.665039,6.5540294 17.642151,6.4823921 17.593879,6.3313229 17.352117,6.2545784 17.089092,6.3068337 16.88672,6.3470421 4.9573552,10.982285 4.6502433,11.140043 c -0.3300466,0.169539 -0.3713022,0.51681 -0.087438,0.736038 0.081048,0.0626 0.8473137,0.349861 1.7028127,0.63837 l 1.5554521,0.524562 3.6345499,-2.295122 c 1.999004,-1.2623185 3.69318,-2.3103525 3.764837,-2.3289672 0.224411,-0.058293 0.238378,0.163028 0.02435,0.3858592 -0.105148,0.1094719 -1.405114,1.283739 -2.888815,2.609482 l -2.6976365,2.410441 0.9384815,0.734999 c 0.516165,0.404249 1.572097,1.232357 2.346517,1.840242 0.77442,0.607884 1.491359,1.150031 1.593198,1.204771 0.250604,0.134703 0.66178,0.07885 0.855612,-0.116222 z m -4.945211,-1.249938 c 0.525578,-0.476215 0.950314,-0.879589 0.943856,-0.896386 -0.0064,-0.0168 -0.409325,-0.339247 -0.895258,-0.716556 L 9.6120362,13.935599 9.467139,15.270719 c -0.07969,0.734315 -0.1594131,1.446396 -0.1771533,1.582402 -0.026637,0.204203 -0.011905,0.247283 0.08456,0.247283 0.064243,0 0.5468313,-0.38963 1.0724103,-0.865846 z"/>
+	
+</svg>
+
+							<span class="sr-only">Telegram</span>
+						</a>
+						
+					
+						
+						
+						<a href="https://twitter.com/ANDRAXPENTEST"
+							 target="_blank"
+							 rel="noopener "
+							class="btn btn--icon btn--clear">
+							
+							
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	
+	<path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"/>
+	
+</svg>
+
+							<span class="sr-only">Twitter</span>
+						</a>
+						
+					
+						
+						
+						<a href="https://youtube.com/thecrackertechnology"
+							 target="_blank"
+							 rel="noopener "
+							class="btn btn--icon btn--clear">
+							
+							
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	
+	<path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+	
+</svg>
+
+							<span class="sr-only">YouTube</span>
+						</a>
+						
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+</footer>
+
+
+</div>
+
+
+<div class="nav-overlay js-nav-toggle"></div>
+
+
+        <script src="/js/init.js"></script>
+        <script src="/js/page-load.js"></script>
+
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '70px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+              {
+                breakpoint: 668,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 380,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body> 
+</html>

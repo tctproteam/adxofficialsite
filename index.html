@@ -1,528 +1,1865 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81673283-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="ANDRAX Hackers Platform the most Advanced Ethical Hacking and Penetration Testing Platform in the world, for Android, Raspberry Pi and general ARM boards">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  gtag('config', 'UA-81673283-2');
+</script>
 
-        <meta property="og:title" content="ANDRAX Hacker's Platform | Ethical Hacking | Penetration Testing">
-        <meta property="og:site_name" content="ANDRAX Hacker's Platform">
-        <meta property="og:url" content="https://andrax.thecrackertechnology.com">
-        <meta property="og:description" content="The most Advanced Ethical Hacking and Penetration Testing Platform in the world, for Android, Raspberry Pi and general ARM boards. ">
-        <meta property="og:type" content="article">
-        <meta property="og:image" content="https://andrax.thecrackertechnology.com/imgs/andrax-samsung-android.png">
+        <title>ANDRAX Hackers Platform</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="ANDRAX Hackers Platform the most Advanced Ethical Hacking and Penetration Testing Platform, for Desktop, Notebooks, Android, Raspberry Pi and general ARM boards"/>
+        
+        
+        
+        <link rel="stylesheet" href="/css/main.css">
+        
+        
 
-        <title>ANDRAX Hackers Platform | Ethical Hacking | Penetration Testing</title>
-
-        <link rel="stylesheet" href="./material/material.min.css">
-        <script src="./material/material.min.js"></script>
-        <link rel="stylesheet" href="./material/google-icons.css">
-
-        <style>
-            @font-face {
-                font-family: 'copper';
-                src: url('./material/fonts/copperplate.ttf');
-            }
-
-            @font-face {
-                font-family: 'play';
-                src: url('./material/fonts/play.ttf');
-            }
-
-            .default-play-size {
-                font-size: 16px;
-            }
-
-            .img-responsive {
-                max-width: 100%;
-                max-height: 100%;
-                display: block;
-                margin-left: auto;
-	            margin-right: auto;
-            }
-
-            .mdl-data-table tbody tr:hover {
-                background-color: black;
-            }
-
-            .table-responsive {
-                min-height: .01%;
-                overflow-x: auto;
-            }
-            @media screen and (max-width: 831px) {
-                .table-responsive {
-                    width: 100%;
-                    margin-bottom: 15px;
-                    overflow-y: hidden;
-                    -ms-overflow-style: -ms-autohiding-scrollbar;
-                    border: 1px solid rgb(30, 255, 0);
-                }
-                .table-responsive > .table {
-                    margin-bottom: 0;
-                }
-                .table-responsive > .table > thead > tr > th,
-                .table-responsive > .table > tbody > tr > th,
-                .table-responsive > .table > tfoot > tr > th,
-                .table-responsive > .table > thead > tr > td,
-                .table-responsive > .table > tbody > tr > td,
-                .table-responsive > .table > tfoot > tr > td {
-                    white-space: nowrap;
-                }
-                .table-responsive > .table-bordered {
-                    border: 0;
-                }
-                .table-responsive > .table-bordered > thead > tr > th:first-child,
-                .table-responsive > .table-bordered > tbody > tr > th:first-child,
-                .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-                .table-responsive > .table-bordered > thead > tr > td:first-child,
-                .table-responsive > .table-bordered > tbody > tr > td:first-child,
-                .table-responsive > .table-bordered > tfoot > tr > td:first-child {
-                    border-left: 0;
-                }
-                .table-responsive > .table-bordered > thead > tr > th:last-child,
-                .table-responsive > .table-bordered > tbody > tr > th:last-child,
-                .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-                .table-responsive > .table-bordered > thead > tr > td:last-child,
-                .table-responsive > .table-bordered > tbody > tr > td:last-child,
-                .table-responsive > .table-bordered > tfoot > tr > td:last-child {
-                    border-right: 0;
-                }
-                .table-responsive > .table-bordered > tbody > tr:last-child > th,
-                .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-                .table-responsive > .table-bordered > tbody > tr:last-child > td,
-                .table-responsive > .table-bordered > tfoot > tr:last-child > td {
-                    border-bottom: 0;
-                }
-            }
-
-            .mdl-layout__header {
-                background-color: #000000;
-                box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.14),0 3px 1px -2px rgba(255, 255, 255, 0.2),0 1px 5px 0 rgba(255, 255, 255, 0.12);
-            }
-
-.blink_text {
-
-		    animation:1s blinker linear infinite;
-		    -webkit-animation:1s blinker linear infinite;
-		    -moz-animation:1s blinker linear infinite;
-
-		     color: red;
-		    }
-
-		    @-moz-keyframes blinker {
-		     0% { opacity: 1.0; }
-		     50% { opacity: 0.0; }
-		     100% { opacity: 1.0; }
-		     }
-
-		    @-webkit-keyframes blinker {
-		     0% { opacity: 1.0; }
-		     50% { opacity: 0.0; }
-		     100% { opacity: 1.0; }
-		     }
-
-		    @keyframes blinker {
-		     0% { opacity: 1.0; }
-		     50% { opacity: 0.0; }
-		     100% { opacity: 1.0; }
-	     }
-
-             iframe { position: absolute; float: left; clear: both; width: 100%; height: 100%; z-index: 0; left no-repeat; }
-
-
-        </style>
-
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        
     </head>
+    <body class="layout-boxed style-classic palette-green mode-light font-copper">
+        
+        <div id="site-wrap" class="site">
 
-    <body style="color: white;background-color: black;">
+	
 
-    <div id="iframe"><iframe scrolling="no" src="particles.html" height="100%" width="100%"></iframe></div>
+	<header class="site-header py-2">
+	<div class="container">
+		<nav class="navbar flex items-center" aria-label="Main Navigation">
+			<a class="sr-only" href="#content">Skip to main content</a>
+			<div class="navbar__branding mr-2">
+				
+				
+				<a class="navbar__logo m-0" href="/"><img src="/images/classic/logo.svg" alt="ANDRAX Logo" /></a>
+				
+			</div>
+			
+			<div class="navbar__container flex-md-auto">
+				<div class="navbar__scroller">
+					<div class="navbar__inner">
+						<button aria-label="Close" class="btn btn--icon btn--clear navbar__close-btn js-nav-toggle">
+							
+							
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	
+	<path d="M23.962 1.412L22.55 0 11.981 10.57 1.411 0 0 1.412l10.57 10.57L0 22.55l1.412 1.412 10.57-10.57 10.568 10.57 1.412-1.412-10.57-10.569z"/>
+	
+</svg>
 
-    <!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+							<span class="sr-only">Close</span>
+						</button>
+						<div class="navbar__menu flex-md">
+							
+								
+								
 
-			<header class="mdl-layout__header">
-				<!-- Global site tag (gtag.js) - Google Analytics -->
-				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81673283-2"></script>
-				<script>
-					window.dataLayer = window.dataLayer || [];
-					function gtag(){dataLayer.push(arguments);}
-					gtag('js', new Date());
+<ul class="menu flex-md items-md-center">
 
-					gtag('config', 'UA-81673283-2');
-				</script>
+	
+	
+	
+	<li class="menu__item ml-md-3">
+		
+		
 
-				<div class="mdl-layout__header-row">
-					<!-- Title -->
-					<span class="mdl-layout-title" style="font-family:'copper';font-size: 14px;">ANDRAX Hackers Platform</span>
-					<!-- Add spacer, to align navigation to the right -->
-					<div class="mdl-layout-spacer"></div>
-					<!-- Navigation. We hide it in small screens. -->
-					<nav class="mdl-navigation mdl-layout--large-screen-only">
-						<a href="./documentation" class="mdl-navigation__link " style="font-family:play;" href=""><b>Documentation</b></a>
-						<a href="./documentation/#what-is-andrax" class="mdl-navigation__link" style="font-family:play;" href=""><b>About</b></a>
-					</nav>
-					<!-- Right aligned menu below button -->
-					<button id="my-menu-lower-right"
-									class="mdl-button mdl-js-button mdl-button--icon">
-						<i class="material-icons">more_vert</i>
-					</button>
 
-					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="my-menu-lower-right">
-						<a href="./download"><li class="mdl-menu__item">DOWNLOAD</li></a>
-					</ul>
+<a href="/documentation"
+	
+	
+	class="">
+	
+	
+		Documentation
+	
+</a>
+
+	</li>
+
+	
+	
+	
+	<li class="menu__item ml-md-3">
+		
+		
+
+
+<a href="/blog"
+	
+	
+	class="">
+	
+	
+		Blog
+	
+</a>
+
+	</li>
+
+	
+	
+	
+	<li class="menu__item ml-md-3">
+		
+		
+
+
+<a href="/about"
+	
+	
+	class="">
+	
+	
+		About
+	
+</a>
+
+	</li>
+
+</ul>
+
+							
+							
+								
+								
+
+<ul class="menu flex-md items-md-center">
+
+	
+	
+	
+	<li class="menu__item ml-md-3">
+		
+		
+
+
+<a href="/contact"
+	
+	
+	class="">
+	
+	
+		Contact
+	
+</a>
+
+	</li>
+
+	
+	
+	
+	<li class="menu__item ml-md-3 menu__item-btn">
+		
+		
+
+
+<a href="/download"
+	
+	
+	class="btn btn--primary">
+	
+	
+		Download
+	
+</a>
+
+	</li>
+
+</ul>
+
+							
+						</div>
+					</div>
 				</div>
+			</div>
+			<button aria-label="Menu" class="btn btn--icon btn--clear navbar__menu-btn js-nav-toggle ml-auto">
+				
+				
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	
+	<path d="M19 11v1.92H0V11zm5-8v1.92H0V3zm-2 16v1.92H0V19z"/>
+	
+</svg>
 
-			</header>
+				<span class="sr-only">Menu</span>
+			</button>
+			
+		</nav>
+	</div>
+</header>
 
-			<div class="mdl-layout__drawer">
-				<span class="mdl-layout-title">ANDRAX</span>
-				<nav class="mdl-navigation">
-					<a href="./documentation" class="mdl-navigation__link" style="font-family:play;" href=""><b>Documentation</b></a>
-					<a href="./documentation/#what-is-andrax" class="mdl-navigation__link" style="font-family:play;" href=""><b>About</b></a>
-				</nav>
-			</div> <!-- <div class="mdl-layout__drawer"> -->
 
-        <main class="mdl-layout__content">
+	<main id="content" class="site-content">
+		
+  
+  
+  
 
-            <div class="page-content">
 
-                <div style="margin-top:20px;" class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--12-col">
-                        <h1 style="font-family: 'copper'; text-align: center;color:  #00FF0A;">ANDRAX <span style="color: red;">Hacker's Platform</span></h1>
-                    </div>
-                </div>
 
-                <div class="mdl-grid" style="margin-bottom:10px;margin-top:10px;">
-                    <div class="mdl-cell mdl-cell--12-col" style="">
-                        <img class="img-responsive" src="imgs/andrax-samsung-android.png" alt="ANDRAX Samsung Android">
-                    </div>
-                </div>
 
-                <div class = "mdl-grid">
-                    <div class="mdl-cell mdl-cell--12-col">
-                        <h2 style="font-family: 'copper'; text-align: center;color: red;">Don't be evil but be a <span style="color: #00FF0A;">CRACKER!</span></h2>
-                    </div>
-                </div>
 
-                <div class = "mdl-grid">
 
-                    <div style="margin-top:40px;" class="mdl-cell mdl-cell--4-col">
 
-                      <div class="mdl-cell mdl-cell--12-col">
-                          <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Portable</h4>
-                          <p class="default-play-size" style="text-align: center;font-family: 'play';">Designed to be installed on any Android Smartphone, full support from version 5.0 to higher and any ARM board (Raspberry Pi and others).</p>
-                      </div>
 
-                      <div class="mdl-cell mdl-cell--12-col">
-                          <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Open Source</h4>
-                          <p class="default-play-size" style="text-align: center;font-family: 'play';">With open development it is possible to have the support of anyone, this increases the security and efficiency of the system!</p>
-                      </div>
 
-                      <div class="mdl-cell mdl-cell--12-col">
-                          <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Optimized</h4>
-                          <p class="default-play-size" style="text-align: center;font-family: 'play';">ANDRAX has been fully developed with a focus on execution with minimal hardware resources.</p>
-                      </div>
 
-                    </div>
 
-                    <div class="mdl-cell mdl-cell--4-col">
 
-                      <div class="mdl-cell mdl-cell--12-col">
-                              <img style="border-radius: 10px;" class="img-responsive" src="imgs/andrax-android-running01.png" alt="ANDRAX Running on Android">
-                      </div>
 
-                    </div>
 
-                    <div style="margin-top:40px;" class="mdl-cell mdl-cell--4-col">
 
-                      <div class="mdl-cell mdl-cell--12-col">
-                              <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >HardBased</h4>
-                              <p class="default-play-size" style="text-align: center;font-family: 'play';">ANDRAX uses the most Advanced and trustworthy structure inside Linux structure ANDRAX become isolated</p>
-                      </div>
 
-                      <div class="mdl-cell mdl-cell--12-col">
-                              <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >More than 3000 tools</h4>
-                              <p class="default-play-size" style="text-align: center;font-family: 'play';">ANDRAX promotes the use of more than 3000 advanced tools for Hacking, Cracking and Penetration Testing.</p>
-                      </div>
 
-                      <div class="mdl-cell mdl-cell--12-col">
-                              <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Over 4000 attacks</h4>
-                              <p class="default-play-size" style="text-align: center;font-family: 'play';">Work with real Offensive Security abusing more than 4000 types of attacks with ANDRAX.</p>
-                      </div>
 
-                    </div>
 
 
-                </div> <!-- <div class = "mdl-grid"> -->
 
-                <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--12-col">
-                        <h5 style="text-align: center;font-family: copper;">What is better a <span style="color:red;">brand</span> or your <span style="color: #00FF0A;">freedom</span>?</h5>
 
-                        <h5 style="text-align: center;font-family: play;color: #00FF0A;">Think about it</h5>
-                    </div>
-                </div> <!-- <div class="mdl-grid"> -->
 
-                <div class="mdl-grid" style="max-width: 800px;">
-                    <div class="mdl-cell mdl-cell--12-col">
-                        <h2 style="text-align:center;font-family: copper;color:red">ATTENTION!!!</h2>
-                        <h3 style="text-align:center;font-family: copper;color:#00FF0A">ANDRAX is a tool for ethical Hacking</h3>
-                        <p class="default-play-size" style="text-align: center;font-family: play;">We abhor any kind of cyber crime! We are security professionals, not pirates!</p>
-                        <p class="default-play-size" style="text-align: center;font-family: play;color:red;"><b>Do not use ANDRAX for illegal activities!</b></p>
-                    </div>
 
 
-                </div> <!-- <div class="mdl-grid" style="max-width: 800px;"> -->
 
-                <div class="mdl-grid">
 
-                  <div style="margin-top:40px;" class="mdl-cell mdl-cell--1-col">
+<section class="section hero has-cover bg-primary pt-6 pt-md-7 pb-6 pb-md-7">
 
+	
+	
+	<div class="cover-img" style="background-image: url('/images/andraxbannersite.jpg'); opacity: 1.0; background-size: cover; background-repeat: no-repeat; background-position: center center"></div>
+	
 
+	<div class="container">
+		<div class="hero__content grid items-center">
+			
+			
+			<div class="hero__media my-2 cell-12 cell-md-6">
+				
+				
+					<img src="/images/classic/multiplatform.png" alt="ANDRAX Multiplatform System" class="mx-auto" />
+				
+			</div>
+			
+			
+			
+			<div class="hero__body my-2 cell-12 cell-md-6 order-md-first text-center">
+				
+				
+				<h1 style="text-align: center;" class="hero__title">Multiplatform</h1>
+				
+				
+				
+				<p class="hero__subtitle">Advanced Ethical Hacking and Penetration Testing</p>
+				
+				
+				
+				<div class="hero__copy">
+					<p>Perform Security tests using many devices; Desktop, Notebook, Android, Raspberry Pi…</p>
 
-                  </div>
+<p>Made for Advanced Professionals, dumbs can’t use it!</p>
 
-                  <div style="margin-top:40px;" class="mdl-cell mdl-cell--5-col">
+<p>The most Advanced Penetration Testing and Ethical Hacking Platform ever made!</p>
 
-                    <h3 style="text-align: center;font-family: copper;color:#00FF0A;">The Best Hacking Platform</h3>
-                    <p class="default-play-size" style="text-align: center;font-family: play;">The most Advanced Penetration Testing and Ethical Hacking Platform</p>
+				</div>
+				
+				
+				
+				<div class="hero__actions btn-group justify-center">
+					
+					
 
-                    <p class="default-play-size" style="text-align: center;font-family: play;">The system who killed others platforms.</p>
+	
+	
 
-                    <img style="margin-top:50px;" class="img-responsive" src="imgs/andrax-logo.png" alt="ANDRAX Logo">
 
-                    <p class="default-play-size" style="margin-top:30px;text-align: center;font-family: play;">ANDRAX revolutionized computing security by bringing a futuristic and innovative vision of the Hacking market</p>
+<a href="/download"
+	
+	
+	class="btn btn--primary">
+	
+	
+		Download NOW
+	
+</a>
 
-                    <p class="default-play-size" style="margin-top:30px;text-align: center;font-family: play;">More tools than anyother platform</p>
-                    <p class="default-play-size" style="text-align: center;font-family: play;">Inovative tools, others systems keep only the same old tools, ANDRAX is the evolution, allowing professionals use the new tools in the market to perform the best tests with the most inovatives methodologies and technologies</p>
 
-                    <p class="default-play-size" style="margin-top:30px;text-align: center;font-family: play;">Made for Advanced Hackers</p>
+	
+	
 
-                    <p class="default-play-size" style="text-align: center;font-family: play;">Others systems are made for youtube dumbs and dedicated for lammers to sell courses, ANDRAX is dedicated to Professionals and Advanced users, we don't care about many users, we care about Advanced users!</p>
 
-                  </div>
+<a href="/adht"
+	
+	
+	class="btn btn--secondary">
+	
+	
+		Learn Hacking
+	
+</a>
 
-                  <div style="margin-top:40px;" class="mdl-cell mdl-cell--6-col">
 
-                    <div class="mdl-cell mdl-cell--12-col">
-                            <img style="border-radius: 20px;" class="img-responsive" src="imgs/andrax-android-running02.png" alt="ANDRAX Running on Android">
-                    </div>
 
-                  </div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+</section>
 
-                </div> <!-- <div class = "mdl-grid"> -->
 
-								<div class = "mdl-grid">
+  
+  
+  
 
-										<div class="mdl-cell mdl-cell--12-col">
-											<h3 style="text-align: center;font-family: copper;">Features and Tools</h3>
-										</div>
 
-                    <div class = "mdl-cell mdl-cell--4-col">
-                        <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Information Gathering</h4>
-                        <p class="default-play-size" style="text-align: center;font-family: 'play';">The best resources and tools for Information Gathering and data collection</p>
-                    </div>
 
-                    <div class = "mdl-cell mdl-cell--4-col">
-                        <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Scanning</h4>
-                        <p class="default-play-size" style="text-align: center;font-family: 'play';">Hundreds of Scanners to perform the best result of all scan operations and increase the success rate</p>
-                    </div>
 
-                    <div class = "mdl-cell mdl-cell--4-col">
-                        <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Packet Crafting</h4>
-                        <p class="default-play-size" style="text-align: center;font-family: 'play';">Tools for Manipulate and Craft Packets, Packet Crafting is extremely essential for bypass IDS and IPS</p>
-                    </div>
 
-                    <div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >IPv6 Attacks</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">ANDRAX is completely able to perform advanced attacks against IPv6 networks</p>
-                    </div>
 
-                    <div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >WebSite Hacking</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Hundreds of tools and resources to perform: WebSite Hacking, Analysis, Exploitation...</p>
-                    </div>
 
-                    <div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Password Attacks</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Brute force, Discover, Online Cracking and all Password based Attacks</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Wireless Hacking</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Fast and Easy Wireless Hacking like: WEP, WPA, WPA2, WPA3... Mixed Attacks; Brute force and Rainbow tables</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Hack Windows</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Advanced resources, tools and techniques to Bypass, Hack and Exploit Windows motherfucker machines</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Hack OSX</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">OSX is the Operating System for dumbs who think they are smart, ANDRAX can easily hack them with many ways!</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Hack Linux</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">ANDRAX is able to Hack the king of the internet too, all types of Attacks and Exploitation methods included</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Hack iOS</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Penetrate in the Apple's mobile Operating System with malicious apps, exploits and Over The Air</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Hack Android</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Embed payload in APK, Create Android APP from ANDRAX, Exploit, Inject and Bypass</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Advanced Phishing</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Advanced tools and resources for next level phishing campaigns</p>
-                    </div>
+<section class="section features bg-none pt-6 pb-6">
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Mobile Telecom</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Advanced Hacking tools for exploit 2G, 3G, 4G and 5G communications</p>
-                    </div>
+	
+	
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >VoIP Hacking</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Dedicated resources for Hacking and Exploitation VoIP communications</p>
-                    </div>
+	
+	<div class="container container--medium mb-5 text-center">
+		
+		
+		<div class="section__subtitle"><p>ANDRAX introduction</p></div>
+		
+		
+		
+		<h2 class="section__title mt-0">ANDRAX Presentation</h2>
+		
+	</div>
+	
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >ICS and SCADA</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Exploit Industrial Control Systems, PLC, MODBUS and RTU Hacking</p>
-                    </div>
+	
+	
+	<div class="container">
+		
+			
+			
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >IoT and IIoT Hacking</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Hack the modern world, IoT and IIoT control the world nowadays and ANDRAX control both!</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Advanced Terminal</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">ANDRAX has the most Advanced Terminal for Ethical Hacking, Cracking and Penetration Testing</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Exploit BGP</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Hack the internet by your Border Gateway Protocol, ANDRAX can poison and inject routes on BGP</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Advanced C2</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Advanced tools for Command and Control, bypass Red Team bitches, gain side access in any network</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >QRCode Hacking</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Exploit and Hijack users, applications... with malicious QR Codes</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Printers Hacking</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">ANDRAX has the ability to Hack and penetrate in networks using printers, physical damages available too</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >DNS Rebinding</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Penetrate in IDS/IPS and Firewall protected networks and remotely run user side exploitation, bypass DNS over TLS</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Hardware Exploitation</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Hack devices in hardware level, bypass any security restriction control the device by your physical layer</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Camera and Webcam Hacking</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Get in Security cameras and users webcams, run code in these devices to hijack the network</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >Bluetooth Hacking</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">ANDRAX can setup the BlueZ Stack on any smartphone or ARM board for Advanced Bluetooth Hacking</p>
-                    </div>
 
-										<div class = "mdl-cell mdl-cell--4-col">
-                            <h4 style="text-align: center; color: #00FF0A;font-family: 'copper';" >CloudFlare Rapist</h4>
-                            <p class="default-play-size" style="text-align: center;font-family: 'play';">Bypass, exploit and take down CloudFlare "secured" systems</p>
-                    </div>
 
-										<div class="mdl-cell mdl-cell--12-col">
-											<h3 style="text-align: center;font-family: copper;">And more...</h3>
-										</div>
 
-										<div class="mdl-cell mdl-cell--4-col">
 
-	                  </div>
 
-										<div style="text-align:center;" class="mdl-cell mdl-cell--4-col">
-											<a href="https://learnapp.thecrackertechnology.com/advanced-hacking-training/"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color:#00FF0A;color:#000000;text-align:center;">
-													<b>Want become a PRO?</b>
-											</button></a>
-	                  </div>
 
-										<div class="mdl-cell mdl-cell--4-col">
 
-	                  </div>
 
-                </div> <!-- <div class = "mdl-grid"> -->
 
-									<p style="margin-top:30px;background-color:#00FF0A;height:1px;">
-                  </p>
 
-                  <div class = "mdl-grid">
+<div class="feature maxw-medium mx-auto py-0">
+	<div class="item__content grid items-center">
+		
+		
+		<div class="feature__media my-2 cell-12">
+			
+			
+				<iframe src="https://player.vimeo.com/video/533018572" width="640" height="361" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+			
+		</div>
+		
+		
+		
+	</div>
+</div>
 
-                    <div class="mdl-cell mdl-cell--12-col" style="">
+		
+	</div>
+	
 
-                    </div>
+</section>
 
-                    <div class="mdl-cell mdl-cell--4-col">
 
-                      <h4 style="font-family: copper;text-align:center;color:#00FF0A;">Become a real professional</h4>
-                      <p class="default-play-size" style="text-align:center;font-family:play;">Stop using systems made by dumb's for lammers<br>Install ANDRAX and join the community of real hackers!</p>
+  
+  
+  
 
-                    </div>
 
-                    <div style="text-align:center;" class="mdl-cell mdl-cell--4-col">
 
-                      <h2 style="font-family: copper;text-align:center;color:#00FF0A;">Try ANDRAX</h2>
 
-                      <a href="./download"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color:#00FF0A;color:black;text-align:center;min-width:100%;">
-                          <b>DOWNLOAD NOW</b>
-                      </button></a>
 
-		                  <!--img class="img-responsive" style="margin-top:20px;" src="imgs/andrax-samsung-android-4glte.png" alt="ANDRAX Samsung Android"-->
 
-                    </div>
 
-                    <div class="mdl-cell mdl-cell--4-col">
 
-                        <h4 style="font-family: copper;text-align:center;color:#00FF0A;">The N° 1</h4>
-                        <p class="default-play-size" style="text-align:center;font-family:play;">The number 1 in Penetration Testing and Ethical Hacking, Dedicated to constantly evolution.</p>
 
-                    </div>
 
 
-                </div> <!-- mdl-grid -->
 
-                <p style="margin-bottom:30px;margin-top: 40px;background-color:#00FF0A;height:1px;">
-                </p>
 
-            </div> <!-- <div class="page-content"> -->
 
-        </main>
 
-      </div> <!-- <div class="mdl-layout mdl-js-layout mdl-layout-fixed-header"> -->
 
-    </body>
 
+
+
+
+
+
+
+
+
+
+
+<section class="section hero bg-none pt-4 pb-4">
+
+	
+	
+
+	<div class="container">
+		<div class="hero__content grid items-center">
+			
+			
+			<div class="hero__media my-2 cell-12 cell-md-6">
+				
+				
+					<img src="/images/notebook.png" alt="ANDRAX Desktop" class="mx-auto" />
+				
+			</div>
+			
+			
+			
+			<div class="hero__body my-2 cell-12 cell-md-6 text-center">
+				
+				
+				<h1 style="text-align: center;" class="hero__title">ANDRAX Desktop</h1>
+				
+				
+				
+				<p class="hero__subtitle">Hack like a pro using you own Linux distro without the need of change it.</p>
+				
+				
+				
+				
+				
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section hero bg-none pt-4 pb-4">
+
+	
+	
+
+	<div class="container">
+		<div class="hero__content grid items-center">
+			
+			
+			<div class="hero__media my-2 cell-12 cell-md-6">
+				
+				
+					<img src="/images/smartphone.png" alt="ANDRAX Mobile" class="mx-auto" />
+				
+			</div>
+			
+			
+			
+			<div class="hero__body my-2 cell-12 cell-md-6 order-md-first text-center">
+				
+				
+				<h1 style="text-align: center;" class="hero__title">ANDRAX Mobile</h1>
+				
+				
+				
+				<p class="hero__subtitle">Hack everything in everywhere!</p>
+				
+				
+				
+				
+				
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section bg-none pt-6 pb-6">
+
+	
+	
+
+	
+	<div class="container container--medium mb-5 text-center">
+		
+		
+		<div class="section__subtitle"><p>The best and more Advanced Tools</p></div>
+		
+		
+		
+		<h2 class="section__title mt-0">Top ANDRAX Tools</h2>
+		
+	</div>
+	
+
+	<div class="container" style="text-align: center;max-width:80vw;">
+			<div class="tools-slider">
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="MetaSploit Framework" src=/images/metasploit.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="Jaeles" src=/images/jaeles.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="Nuclei" src=/images/nuclei.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="OWASP-ZAP" src=/images/zap.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="Hydra" src=/images/hydra.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="John The Ripper" src=/images/john.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="Aircrack-NG" src=/images/aircrack.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="CrackMapExec" src=/images/cme.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="Empire" src=/images/empire.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="EvilSSDP" src=/images/ssdp.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="RouterSploit Framework" src=/images/rsf.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="PRET Framework" src=/images/pret.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="Singularity DNS Rebinding Framework" src=/images/singularity.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="DNSteal" src=/images/dnsteal.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="Radare2" src=/images/radare2.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="EvilGINX2" src=/images/evilginx2.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="EnodeB-HACK" src=/images/4glte.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="ICSSPLOIT" src=/images/ics.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="BIRP Big Iron Recon & PWN" src=/images/mainframe.svg></div>
+                <div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="QrlJacker" src=/images/qrljacker.svg></div>
+				<div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="Katana-DS" src=/images/katana.svg></div>
+				<div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="OWASP Tools" src=/images/owasp.svg></div>
+				<div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="Maltego" src=/images/maltego.svg></div>
+				<div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="Raccoon" src=/images/raccoon.svg></div>
+				<div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="Scapy" src=/images/scapy.svg></div>
+				<div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="Bettercap" src=/images/bettercap.svg></div>
+				<div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="Vulnx" src=/images/vulnx.svg></div>
+				<div style="padding: 30px;"><img style="display:block;margin:auto;transition: transform .2s;" title="EAPHammer" src=/images/eaphammer.svg></div>
+            </div>
+	</div>
+
+	
+	
+	<div class="container container--medium mt-4" style="margin-top:50px;">
+		<div class="section__actions btn-group justify-center">
+			
+			
+
+	
+	
+
+
+<a href="/download"
+	
+	
+	class="btn btn--secondary">
+	
+	
+		More than 3000 tools
+	
+</a>
+
+
+
+		</div>
+	</div>
+	
+
+</section>
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section bg-none pt-6 pb-6">
+
+	
+	
+
+	
+	<div class="container container--medium mb-5 text-center">
+		
+		
+		<div class="section__subtitle"><p>The Best and Most Advanced Penetration Testing and Ethical Hacking Platform ever made</p></div>
+		
+		
+		
+		<h2 class="section__title mt-0">The Most Advanced Platform</h2>
+		
+	</div>
+	
+
+	
+	
+	<div class="container">
+		<div class="grid grid-gap-small">
+			
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cell-12 cell-md-6 cell-lg-4 my-2">
+	<div class="item card card--highlight card--vert p-3 p-sm-4">
+		<div class=" flex flex-column">
+			
+			
+			<div class="">
+				<div class="item__media card__media card__media--top mb-3">
+					<img src="/images/tools.svg" title="ANDRAX Tools" alt="ANDRAX Tools" class=" mx-auto" />
+				</div>
+			</div>
+			
+			
+			
+			<div class="">
+				<div class="item__body">
+					
+					
+						
+						
+						<h3 class="item__title h4 text-center">More tools & attacks</h3>
+						
+					
+					
+					
+					
+					
+					<div class="item__copy text-center">
+						<p>ANDRAX have more features and tools than any other system.</p>
+
+					</div>
+					
+					
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+			
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cell-12 cell-md-6 cell-lg-4 my-2">
+	<div class="item card card--highlight card--vert p-3 p-sm-4">
+		<div class=" flex flex-column">
+			
+			
+			<div class="">
+				<div class="item__media card__media card__media--top mb-3">
+					<img src="/images/crossplatform.svg" title="ANDRAX is Portable" alt="ANDRAX is Portable" class=" mx-auto" />
+				</div>
+			</div>
+			
+			
+			
+			<div class="">
+				<div class="item__body">
+					
+					
+						
+						
+						<h3 class="item__title h4 text-center">Portable</h3>
+						
+					
+					
+					
+					
+					
+					<div class="item__copy text-center">
+						<p>ANDRAX is portable, install in Any Android or Linux distro without modify the system, Freedom is the key!</p>
+
+					</div>
+					
+					
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+			
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cell-12 cell-md-6 cell-lg-4 my-2">
+	<div class="item card card--highlight card--vert p-3 p-sm-4">
+		<div class=" flex flex-column">
+			
+			
+			<div class="">
+				<div class="item__media card__media card__media--top mb-3">
+					<img src="/images/hackeverything.svg" title="ANDRAX can hack everything" alt="ANDRAX can hack everything" class=" mx-auto" />
+				</div>
+			</div>
+			
+			
+			
+			<div class="">
+				<div class="item__body">
+					
+					
+						
+						
+						<h3 class="item__title h4 text-center">Hack everything in Everywhere</h3>
+						
+					
+					
+					
+					
+					
+					<div class="item__copy text-center">
+						<p>ANDRAX can hack anything from everywhere!</p>
+
+					</div>
+					
+					
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+			
+		</div>
+	</div>
+	
+
+	
+	
+	<div class="container container--medium mt-4">
+		<div class="section__actions btn-group justify-center">
+			
+			
+
+	
+	
+
+
+<a href="/download"
+	
+	
+	class="btn btn--primary">
+	
+	
+		And more... DOWNLOAD
+	
+</a>
+
+
+
+		</div>
+	</div>
+	
+
+</section>
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section blog-feed bg-none pt-6 pb-6">
+
+	
+	
+
+	
+	<div class="container container--medium mb-5 text-center">
+		
+		
+		<div class="section__subtitle">Blog posts about Ethical Hacking and Penetration Testing</div>
+		
+		
+		
+		<h2 class="section__title mt-0">What's New</h2>
+		
+	</div>
+	
+	
+	<div class="container">
+		<div class="grid">
+			
+			
+			
+
+			
+			
+			
+
+			
+			
+			
+
+			
+			
+
+			
+			
+			
+
+			
+				
+				
+				
+				
+				
+				
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="cell-12 cell-md-6 my-2 cell-lg-4">
+	<div class="item card card--highlight card--vert">
+		<div class="flex flex-column">
+			
+			<div class="item__media mb-3 card__media card__media--fill card__media--top">
+				<a href="/blog/phreaking-how-to-spoof-cell-phone-number/"><img src="/images/phreakinghacker.jpg" alt="PHREAKING Spoofing Cell Phone Number" /></a>
+			</div>
+			
+			<div class="item__body px-3 pb-3 px-sm-4 pb-sm-4">
+				
+				<div class="item__meta mb-1">
+					
+					
+						
+						
+
+<span class="item__cat">
+	
+		
+		
+		
+			<a href="/blog/category/pentest">Penetration Testing</a>, 
+		
+	
+		
+		
+		
+			<a href="/blog/category/tutorials">Tutorials</a>, 
+		
+	
+		
+		
+		
+			<a href="/blog/category/general">General</a>
+		
+	
+</span>
+
+						
+						
+							<span class="item__meta-sep"> &middot; </span>
+						
+					
+					
+					
+						<span class="item__date"><time datetime="2021-04-04 00:00">April 04, 2021</time></span>
+					
+				</div>
+				
+				
+				
+					<h3 class="item__title mt-0 h4"><a href="/blog/phreaking-how-to-spoof-cell-phone-number/">[Phreaking] : How to Spoof Cell Phone Number</a></h3>
+				
+				
+				
+					
+					
+
+
+<div class="item__byline">
+	
+	
+	
+	<a class="flex items-center" href="/blog/author/weidsom-nascimento">
+		
+		
+		<figure class="avatar mr-1 avatar--small">
+			<img class="avatar__img" src="/images/weidsom-nascimento.png" alt="Weidsom Nascimento" />
+		</figure>
+		
+		<span>Weidsom Nascimento</span>
+	</a>
+	
+</div>
+
+				
+			</div>
+		</div>
+	</div>
+</article>
+
+
+
+				
+			
+				
+				
+				
+				
+				
+				
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="cell-12 cell-md-6 my-2 cell-lg-4">
+	<div class="item card card--highlight card--vert">
+		<div class="flex flex-column">
+			
+			<div class="item__media mb-3 card__media card__media--fill card__media--top">
+				<a href="/blog/hacking-a-nuclear-power-plant/"><img src="/images/how-to-hack-a-nuclear-power-plant.jpg" alt="How to Hack A Nuclear Power Plant" /></a>
+			</div>
+			
+			<div class="item__body px-3 pb-3 px-sm-4 pb-sm-4">
+				
+				<div class="item__meta mb-1">
+					
+					
+						
+						
+
+<span class="item__cat">
+	
+		
+		
+		
+			<a href="/blog/category/pentest">Penetration Testing</a>, 
+		
+	
+		
+		
+		
+			<a href="/blog/category/tutorials">Tutorials</a>, 
+		
+	
+		
+		
+		
+			<a href="/blog/category/general">General</a>
+		
+	
+</span>
+
+						
+						
+							<span class="item__meta-sep"> &middot; </span>
+						
+					
+					
+					
+						<span class="item__date"><time datetime="2021-04-02 00:00">April 02, 2021</time></span>
+					
+				</div>
+				
+				
+				
+					<h3 class="item__title mt-0 h4"><a href="/blog/hacking-a-nuclear-power-plant/">Hacking A Nuclear Power Plant with ANDRAX</a></h3>
+				
+				
+				
+					
+					
+
+
+<div class="item__byline">
+	
+	
+	
+	<a class="flex items-center" href="/blog/author/weidsom-nascimento">
+		
+		
+		<figure class="avatar mr-1 avatar--small">
+			<img class="avatar__img" src="/images/weidsom-nascimento.png" alt="Weidsom Nascimento" />
+		</figure>
+		
+		<span>Weidsom Nascimento</span>
+	</a>
+	
+</div>
+
+				
+			</div>
+		</div>
+	</div>
+</article>
+
+
+
+				
+			
+				
+				
+				
+				
+				
+				
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="cell-12 cell-md-6 my-2 cell-lg-4">
+	<div class="item card card--highlight card--vert">
+		<div class="flex flex-column">
+			
+			<div class="item__media mb-3 card__media card__media--fill card__media--top">
+				<a href="/blog/how-to-become-an-ethical-hacker/"><img src="/images/how-to-become-an-ethical-hacker.jpg" alt="How to become an Ethical Hacker" /></a>
+			</div>
+			
+			<div class="item__body px-3 pb-3 px-sm-4 pb-sm-4">
+				
+				<div class="item__meta mb-1">
+					
+					
+						
+						
+
+<span class="item__cat">
+	
+		
+		
+		
+			<a href="/blog/category/pentest">Penetration Testing</a>, 
+		
+	
+		
+		
+		
+			<a href="/blog/category/tutorials">Tutorials</a>, 
+		
+	
+		
+		
+		
+			<a href="/blog/category/general">General</a>
+		
+	
+</span>
+
+						
+						
+							<span class="item__meta-sep"> &middot; </span>
+						
+					
+					
+					
+						<span class="item__date"><time datetime="2021-03-30 00:00">March 30, 2021</time></span>
+					
+				</div>
+				
+				
+				
+					<h3 class="item__title mt-0 h4"><a href="/blog/how-to-become-an-ethical-hacker/">How to become an Ethical Hacker?</a></h3>
+				
+				
+				
+					
+					
+
+
+<div class="item__byline">
+	
+	
+	
+	<a class="flex items-center" href="/blog/author/weidsom-nascimento">
+		
+		
+		<figure class="avatar mr-1 avatar--small">
+			<img class="avatar__img" src="/images/weidsom-nascimento.png" alt="Weidsom Nascimento" />
+		</figure>
+		
+		<span>Weidsom Nascimento</span>
+	</a>
+	
+</div>
+
+				
+			</div>
+		</div>
+	</div>
+</article>
+
+
+
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+		</div>
+	</div>
+
+	
+	
+	<div class="container container--medium mt-4">
+		<div class="section__actions btn-group justify-center">
+			
+			
+
+	
+	
+
+
+<a href="/blog"
+	
+	
+	class="btn btn--primary">
+	
+	
+		View All Posts
+	
+</a>
+
+
+
+		</div>
+	</div>
+	
+
+</section>
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section cta bg-none pt-6 pt-md-7 pb-6 pb-md-7">
+
+	
+	
+
+	<div class="container container--medium">
+		<div class="cta__content grid items-center">
+			
+			
+			<div class="cta__body my-1 cell-12 text-center">
+				
+				
+				<h1 class="cta__title">Wanna make money with Ethical Hacking?</h1>
+				
+				
+				
+				<div class="cta__copy">
+					<p>Learn how to become a professional in Penetration Testing and Ethical Hacking, start earn money with the most good paid profession!</p>
+
+				</div>
+				
+			</div>
+			
+			
+			
+			<div class="cta__actions my-1 cell-12">
+				<div class="cta__actions btn-group justify-center">
+					
+					
+
+	
+	
+
+
+<a href="/adht"
+	
+	
+	class="btn btn--primary">
+	
+	
+		Learn Hacking
+	
+</a>
+
+
+
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+
+	</main>
+
+	
+
+
+
+
+
+
+
+<footer class="site-footer">
+	
+	<div class="site-footer__nav py-5 py-md-6">
+		<div class="container">
+			<div class="grid">
+				
+				
+				<a class="site-footer__logo cell-12 cell-md-5 my-4" href="/">
+					<img style="max-width: 300px;" src="/images/classic/andrax-full-logo.svg" alt="ANDRAX Logo" />
+				</a>
+				
+				
+				<div class="site-footer__menu cell-12 cell-md my-3 my-md-4">
+					
+					
+					<h2 class="h4 mb-3 mb-md-4">ANDRAX</h2>
+					
+					
+					
+<ul class="menu">
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/about"
+	
+	
+	class="">
+	
+	
+		About
+	
+</a>
+
+	</li>
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/contact"
+	
+	
+	class="">
+	
+	
+		Contact
+	
+</a>
+
+	</li>
+
+</ul>
+
+				</div>
+				
+				
+				<div class="site-footer__menu cell-12 cell-md my-3 my-md-4">
+					
+					
+					<h2 class="h4 mb-3 mb-md-4">Blog</h2>
+					
+					
+					
+<ul class="menu">
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/blog/category/news"
+	
+	
+	class="">
+	
+	
+		News
+	
+</a>
+
+	</li>
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/blog/category/general"
+	
+	
+	class="">
+	
+	
+		General
+	
+</a>
+
+	</li>
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/blog/category/tutorials"
+	
+	
+	class="">
+	
+	
+		Tutorials
+	
+</a>
+
+	</li>
+
+</ul>
+
+				</div>
+				
+				
+				<div class="site-footer__menu cell-12 cell-md my-3 my-md-4">
+					
+					
+					<h2 class="h4 mb-3 mb-md-4">Legal</h2>
+					
+					
+					
+<ul class="menu">
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/terms-conditions"
+	
+	
+	class="">
+	
+	
+		Terms & Conditions
+	
+</a>
+
+	</li>
+
+	<li class="menu__item mb-1">
+		
+		
+
+
+<a href="/privacy-policy"
+	
+	
+	class="">
+	
+	
+		Privacy Policy
+	
+</a>
+
+	</li>
+
+</ul>
+
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="site-footer__info py-3 py-sm-4">
+		<div class="container">
+			<div class="grid items-center">
+				
+				
+				<div class="site-footer__copyright cell-12 cell-sm">
+					
+					
+						<span>Copyritght &copy; ANDRAX Hackers Platform 2021. All rights reserved. <a href="https://www.thecrackertechnology.com" target="_blank" rel="noopener">The Cracker Technology - Advanced Pentest</a>.</span>
+					
+					
+				</div>
+				
+				
+				
+				<div class="site-footer__social cell-12 cell-sm-auto">
+					
+						
+						
+						<a href="https://wa.me/message/DQW2Y7YWBJ7TB1"
+							 target="_blank"
+							 rel="noopener "
+							class="btn btn--icon btn--clear">
+							
+							
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	
+	<path d="M 10.275266,23.228679 C 9.321972,23.082505 8.1436729,22.735948 7.2960321,22.35244 L 6.7071039,22.085985 4.7916357,22.591891 c -1.0535074,0.278248 -2.0391156,0.505906 -2.1902403,0.505906 -0.4741049,0 -1.0147849,-0.278261 -1.2970171,-0.667509 C 0.85566573,21.811432 0.86427507,21.640007 1.4531465,19.468122 L 1.9853863,17.505108 1.6578314,16.788207 C 1.2501356,15.895908 0.98838113,15.104309 0.78482181,14.148049 0.56614407,13.120767 0.56814589,10.838164 0.78863428,9.8011639 1.7659461,5.2046703 5.1904299,1.7833647 9.7911938,0.80695974 c 1.0556472,-0.22403663 3.3200532,-0.22231286 4.3913042,0.003346 3.482863,0.73365476 6.385548,2.92172736 7.956866,5.99796276 2.250558,4.4060185 1.377958,9.7609225 -2.160518,13.2584985 -2.568611,2.538921 -6.151866,3.706527 -9.70358,3.161917 z M 13.62321,22.130146 C 18.777411,21.295033 22.46176,16.76221 22.243433,11.524756 22.054192,6.9850386 18.959029,3.1895803 14.473889,1.9973138 13.700551,1.7917407 13.387612,1.7598182 12.067996,1.7518929 10.047237,1.7397566 8.952407,1.9911141 7.2483965,2.858405 c -4.91915,2.5037016 -6.9350909,8.534049 -4.5516434,13.615473 0.1988954,0.424037 0.3616281,0.846348 0.3616281,0.938468 0,0.09212 -0.2275388,1.008782 -0.5056416,2.037028 -0.2781029,1.028246 -0.5056417,1.946208 -0.5056417,2.039915 0,0.230218 0.2634953,0.506313 0.4832089,0.506313 0.098399,0 1.0903159,-0.235383 2.2042602,-0.523074 2.2841582,-0.589913 1.9228512,-0.594221 3.4261984,0.04086 1.6378744,0.691913 3.6184296,0.915535 5.4624446,0.616757 z M 10.964778,20.556677 C 10.042679,20.411584 9.2068888,20.170134 8.2845069,19.782374 7.5821436,19.48711 7.0815356,19.331966 6.8311551,19.331966 c -0.2100671,0 -0.8735483,0.123997 -1.4744029,0.275548 -0.6008546,0.151552 -1.1086253,0.27555 -1.1283794,0.27555 -0.019753,0 0.1046747,-0.506322 0.276508,-1.125158 C 4.8842726,17.391576 4.8667832,17.061569 4.3617379,16.056937 3.3572034,14.058729 3.102688,11.973791 3.6086983,9.8881925 4.213293,7.3962631 6.0196685,5.237753 8.432568,4.1239594 c 1.1491831,-0.5304623 2.104179,-0.721526 3.589461,-0.7181349 1.494179,0.00341 2.357256,0.1876651 3.601391,0.7688414 0.977629,0.4566821 1.488875,0.8107372 2.315457,1.6035342 1.635886,1.5690223 2.510678,3.4837157 2.646488,5.7924809 0.219412,3.729983 -2.178162,7.298182 -5.739021,8.541116 -1.165473,0.406815 -2.876897,0.602967 -3.881566,0.44488 z m 5.209078,-3.666873 c 0.674923,-0.322848 1.092728,-0.818337 1.224412,-1.452064 0.180875,-0.870459 0.192411,-0.855438 -1.188815,-1.547858 -0.680201,-0.340992 -1.310576,-0.619985 -1.400831,-0.619985 -0.09262,0 -0.410607,0.300065 -0.730015,0.688872 -0.416219,0.50665 -0.623913,0.688871 -0.785171,0.688871 -0.280844,0 -1.394159,-0.548766 -1.96982,-0.970949 C 10.737044,13.246509 9.892458,12.314498 9.5025683,11.667147 L 9.1895427,11.14742 9.3893081,10.899803 C 9.966987,10.183752 10.137365,9.9163549 10.137365,9.725779 10.137365,9.4413449 9.2300269,7.3116794 9.0190377,7.1008857 8.8159188,6.8979542 8.2418225,6.8767903 7.81162,7.0563735 7.162552,7.3273195 6.5689825,8.2971554 6.484843,9.2242009 c -0.097595,1.0753011 0.3462077,2.1985281 1.4546958,3.6817061 1.516086,2.028551 2.9767352,3.143134 5.0478052,3.851851 1.480794,0.506723 2.329699,0.541901 3.186512,0.132046 z"/>
+	
+</svg>
+
+							<span class="sr-only">WhatsApp</span>
+						</a>
+						
+					
+						
+						
+						<a href="https://t.me/advancedpentest"
+							 target="_blank"
+							 rel="noopener "
+							class="btn btn--icon btn--clear">
+							
+							
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	
+	<path d="M 10.236096,23.663539 C 7.5534478,23.229842 5.3356975,22.07927 3.4627334,20.149511 1.8727337,18.511296 0.84086727,16.567621 0.33868071,14.264892 0.20516085,13.652647 0.1876823,13.389306 0.1876823,11.989889 c 0,-1.399418 0.0174796,-1.662758 0.15099841,-2.2750034 C 0.84086727,7.4121561 1.8727337,5.4684814 3.4627334,3.8302671 5.2130398,2.026885 7.1621532,0.95969973 9.7177709,0.4054863 10.326951,0.27337965 10.591438,0.2560626 12,0.2560626 c 1.408563,0 1.673049,0.0173202 2.282229,0.1494237 2.555619,0.55421343 4.504732,1.6213987 6.255038,3.4247808 1.59,1.6382143 2.621867,3.581889 3.124052,5.8846185 0.133521,0.6122454 0.150999,0.8755854 0.150999,2.2750034 0,1.399417 -0.01748,1.662758 -0.150999,2.275003 -0.502185,2.302729 -1.534052,4.246404 -3.124052,5.884619 -1.742006,1.79483 -3.709095,2.875076 -6.22089,3.41626 -0.855335,0.184287 -3.197913,0.240418 -4.080281,0.09777 z m 5.156068,-6.179043 c 0.133587,-0.134442 0.283871,-0.81241 1.221962,-5.512575 C 17.202428,9.0243177 17.665039,6.5540294 17.642151,6.4823921 17.593879,6.3313229 17.352117,6.2545784 17.089092,6.3068337 16.88672,6.3470421 4.9573552,10.982285 4.6502433,11.140043 c -0.3300466,0.169539 -0.3713022,0.51681 -0.087438,0.736038 0.081048,0.0626 0.8473137,0.349861 1.7028127,0.63837 l 1.5554521,0.524562 3.6345499,-2.295122 c 1.999004,-1.2623185 3.69318,-2.3103525 3.764837,-2.3289672 0.224411,-0.058293 0.238378,0.163028 0.02435,0.3858592 -0.105148,0.1094719 -1.405114,1.283739 -2.888815,2.609482 l -2.6976365,2.410441 0.9384815,0.734999 c 0.516165,0.404249 1.572097,1.232357 2.346517,1.840242 0.77442,0.607884 1.491359,1.150031 1.593198,1.204771 0.250604,0.134703 0.66178,0.07885 0.855612,-0.116222 z m -4.945211,-1.249938 c 0.525578,-0.476215 0.950314,-0.879589 0.943856,-0.896386 -0.0064,-0.0168 -0.409325,-0.339247 -0.895258,-0.716556 L 9.6120362,13.935599 9.467139,15.270719 c -0.07969,0.734315 -0.1594131,1.446396 -0.1771533,1.582402 -0.026637,0.204203 -0.011905,0.247283 0.08456,0.247283 0.064243,0 0.5468313,-0.38963 1.0724103,-0.865846 z"/>
+	
+</svg>
+
+							<span class="sr-only">Telegram</span>
+						</a>
+						
+					
+						
+						
+						<a href="https://twitter.com/ANDRAXPENTEST"
+							 target="_blank"
+							 rel="noopener "
+							class="btn btn--icon btn--clear">
+							
+							
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	
+	<path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"/>
+	
+</svg>
+
+							<span class="sr-only">Twitter</span>
+						</a>
+						
+					
+						
+						
+						<a href="https://youtube.com/thecrackertechnology"
+							 target="_blank"
+							 rel="noopener "
+							class="btn btn--icon btn--clear">
+							
+							
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	
+	<path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+	
+</svg>
+
+							<span class="sr-only">YouTube</span>
+						</a>
+						
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+</footer>
+
+
+</div>
+
+
+<div class="nav-overlay js-nav-toggle"></div>
+
+
+        <script src="/js/init.js"></script>
+        <script src="/js/page-load.js"></script>
+
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '70px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+              {
+                breakpoint: 668,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 380,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body> 
 </html>
