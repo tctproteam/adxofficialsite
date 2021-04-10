@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Weidsom Nascimento">
+  <link rel="canonical" href="https://andrax.thecrackertechnology.com/documentation/bluetooth-hacking-andrax/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Bluetooth Hacking - ANDRAX Hackers Platform - Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Bluetooth Hacking";
+    var mkdocs_page_input_path = "bluetooth-hacking-andrax.md";
+    var mkdocs_page_url = "/documentation/bluetooth-hacking-andrax/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/c.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/cpp.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/ruby.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/http.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-81673283-2', 'andrax.thecrackertechnology.com');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ANDRAX Hackers Platform - Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Introduction</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../install/">ANDRAX Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../update/">Update/Upgrade ANDRAX</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dragon-terminal/">ANDRAX Dragon Terminal</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">ANDRAX Kernel BUILDING</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../introduction-to-kernel-building/">Introduction to Kernel Building</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../shmem-in-kernel/">Enable SHMEM in Kernel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../hci-bluetooth-support/">HCI Bluetooth support</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../MAC80211/">MAC80211</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../andrax-wireless-drivers/">Wireless Drivers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../compiling-kernel/">Compiling the Kernel</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">First steps</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../services/">ANDRAX Services</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../remote-control-andrax/">Remote Control ANDRAX</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Bluetooth Hacking</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#finding-the-serial-port">Finding the serial port</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-serial-speed">The serial speed</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#attaching-to-the-serial-port">Attaching to the serial port</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#learn-ethical-hacking">Learn Ethical Hacking</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ANDRAX Hackers Platform - Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>First steps &raquo;</li>
+        
+      
+    
+    <li>Bluetooth Hacking</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="admonition tip">
+<p class="admonition-title"><strong>Android has the best Bluetooth chipsets!</strong></p>
+<p>Android has a SoC with a powerful Bluetooth chipset with modern BLE capabilities, you don't need use a external Bluetooth adapter as dumbs do! You just need your smartphone!</p>
+</div>
+<h1 id="how-to-enable-bluetooth-in-andrax">How to enable Bluetooth in ANDRAX</h1>
+<p>Android interact with the Bluetooth module using a serial port device who is created by the SoC Bluetooth driver, this allow us kill the Android Bluetooth interface and enable our own HCI interface attaching to this serial port, by this way we have a so fast connection with our Bluetooth module <strong>the connection speed is faster than any external adapter!</strong> (ANDRAX in top, again!)</p>
+<h2 id="finding-the-serial-port">Finding the serial port</h2>
+<p>Find the serial port to use in Android is pretty easy, everyone can easily find it without any help... but if you are a dumb created by Offensive Security we will help you!</p>
+<p>Just past the following commands on a ANDRAX recovery shell and you will be able to find your device serial port for Bluetooth connections:</p>
+<pre><code class="language-sh">su
+cd /;cat *.rc | grep -i &quot;bluetooth&quot; | grep -i &quot;net_bt_stack&quot; | grep -i &quot;\/dev&quot;
+</code></pre>
+<p>After run the commands you will see a result like this:</p>
+<p><img alt="Bluetooth Serial Port" src="../img/bluetooth-serialport.png" title="Bluetooth Serial Port" /></p>
+<p>Now you know that your serial port for Bluetooth connections is located at "<strong>/dev/ttyS0</strong>", whats next?</p>
+<h2 id="the-serial-speed">The serial speed</h2>
+<p>Now we will need attach to the serial port but to do that you need discover the "baud" speed of the serial port, we will go back to the ANDRAX shell and past the following command:</p>
+<pre><code class="language-sh">sudo stty -F /dev/&lt;your serial port&gt;
+</code></pre>
+<p>You will be able to see the result like this:</p>
+<p><img alt="Bluetooth Serial Speed" src="../img/bluetooth-baudspeed.png" title="Bluetooth Serial Speed" /></p>
+<p>As we can see my Bluetooth chipset have the speed of 3.000.000 bauds per second (bps) or 3 Megabits per second which is a very, very high speed for a local physical connection!</p>
+<p>We will use a low range speed because this chipset speed is shared with the entire modem SoC, this mean that is used by Mobile Network, WiFi, Bluetooth and any other type of connectivity chipset like NFC.</p>
+<p>For 99.9% of attack types we will use the speed of 115200 bauds per second that is more than a good speed.</p>
+<h2 id="attaching-to-the-serial-port">Attaching to the serial port</h2>
+<p>We will use <strong>hciattach</strong> to attach to the serial port and create a <strong>hci</strong> interface, the basic syntax of the hciattach command is:</p>
+<pre><code class="language-sh">sudo hciattach -s 115200 /dev/ttyS0 any 3000000
+</code></pre>
+<ul>
+<li><strong>sudo</strong>: To get root privileges</li>
+<li><strong>hciattach</strong>: The command to attach to the serial port</li>
+<li><strong>-s 115200</strong>: The initial speed to we work</li>
+<li><strong>/dev/ttyS0</strong>: The serial port device block</li>
+<li><strong>any</strong>: The device manufacturer type</li>
+<li><strong>3000000</strong>: My real device speed</li>
+</ul>
+<p>We have the device setup complete, now we will power up the interface with hciconfig, hciconfig has a syntax similar with the old ifconfig:</p>
+<pre><code class="language-sh">sudo hciconfig hci0 up
+</code></pre>
+<ul>
+<li><strong>sudo</strong>: To get root privileges</li>
+<li><strong>hciconfig</strong>: The command to manage the interface</li>
+<li><strong>hci0</strong>: The interface to power up</li>
+<li><strong>up</strong>: The subcommand to up the interface</li>
+</ul>
+<p><img alt="Bluetooth Hciattach and Hciconfig" src="../img/bluetooth-hciattach-and-hciconfig.png" title="Bluetooth Hciattach and Hciconfig" /></p>
+<p>Now everything is fine, our hci interface is up and running.</p>
+<p>To remove the lock and get you Android bluetooth working again just restart your device.</p>
+<h2 id="learn-ethical-hacking">Learn Ethical Hacking</h2>
+<p>If you want to become a professional, join our Advanced Ethical Hacking Training: <a href="https://andrax.thecrackertechnology.com/adht">JOIN NOW!</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../remote-control-andrax/" class="btn btn-neutral" title="Remote Control ANDRAX"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../remote-control-andrax/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
