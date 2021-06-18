@@ -4,7 +4,7 @@
 		return $.fn.countdown.begin(this, $.extend({
 			year: 2021, // YYYY Format
 			month: 6, // 1-12
-			day: 15, // 1-31
+			day: 25, // 1-31
 			hour: 23, // 24 hour format 0-23
 			minute: 59, // 0-59
 			second: 0, // 0-59
