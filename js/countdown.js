@@ -3,8 +3,8 @@
 	$.fn.countdown = function (options) {
 		return $.fn.countdown.begin(this, $.extend({
 			year: 2021, // YYYY Format
-			month: 8, // 1-12
-			day: 31, // 1-31
+			month: 9, // 1-12
+			day: 6, // 1-31
 			hour: 23, // 24 hour format 0-23
 			minute: 59, // 0-59
 			second: 0, // 0-59
